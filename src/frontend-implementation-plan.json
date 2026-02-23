@@ -1,176 +1,365 @@
 {
   "kind": "implementation_plan",
   "version": "1.0",
-  "title": "Rebuild EVRON website with new logo, remove Industrial Battery, add Telecom Battery and split Inverter products",
+  "title": "EVRON Website Redesign with Brand Identity and Premium Corporate Styling",
   "requirements": [
     {
-      "id": "REQ-25",
-      "summary": "Design and generate a new EVRON logo featuring two symmetrical green leaves forming a subtle V shape with bold modern sans-serif font",
+      "id": "REQ-34",
+      "summary": "Replace existing logo with redesigned EVRON corporate logo featuring two symmetrical green leaves in V-shape",
       "acceptanceCriteria": [
-        "Logo displays two symmetrical green leaves in #2ecc71 color",
-        "Leaves form a subtle V shape",
-        "Uses bold modern sans-serif font for EVRON text",
-        "Design appears minimal, eco-friendly and corporate"
+        "Logo features two symmetrical green leaves in a V-shape design",
+        "EVRON text is in bold modern sans-serif below the leaf symbol",
+        "Uses green (#2ecc71) and black colors",
+        "Design is minimal, clean, and scalable",
+        "Appears professional and corporate, not cartoonish"
       ],
       "file_operations": [
         {
           "path": "frontend/src/components/HeroSection.tsx",
           "operation": "modify",
-          "description": "Update logo import to reference the generated EVRON logo at frontend/public/assets/generated/evron-logo.dim_400x200.png instead of the current logo path. Ensure the logo displays prominently in the hero section with appropriate sizing and alt text describing the two-leaf V-shaped design."
+          "description": "Update logo image reference to use the new generated EVRON corporate logo at frontend/public/assets/generated/evron-logo.dim_400x400.png with two symmetrical green leaves forming a V-shape above bold EVRON text"
         },
         {
           "path": "frontend/src/components/Footer.tsx",
           "operation": "modify",
-          "description": "Update footer logo to reference the generated EVRON logo at frontend/public/assets/generated/evron-logo.dim_400x200.png. Ensure consistent branding across the website footer."
+          "description": "Update footer logo reference to use the new generated EVRON corporate logo at frontend/public/assets/generated/evron-logo.dim_400x400.png"
         }
       ]
     },
     {
-      "id": "REQ-26",
-      "summary": "Display the tagline 'Drive the Future, Live the Green' clearly visible below the EVRON logo in the hero section",
+      "id": "REQ-35",
+      "summary": "Update hero section with new headline, tagline, subheading, CTA buttons, and prominent phone display",
       "acceptanceCriteria": [
-        "Tagline 'Drive the Future, Live the Green' appears below logo in hero section",
-        "Tagline is clearly readable and prominently displayed"
+        "Hero headline reads 'EVRON – Powering the Future of Energy'",
+        "Tagline 'Drive the Future, Live the Green' appears below logo",
+        "Subheading includes Homes, Telecom & EV Applications",
+        "Two CTA buttons display 'Explore Products' and 'Contact Now'",
+        "Phone number +91 9296174465 is prominently visible"
       ],
       "file_operations": [
         {
           "path": "frontend/src/components/HeroSection.tsx",
           "operation": "modify",
-          "description": "Ensure the tagline 'Drive the Future, Live the Green' is displayed clearly and prominently below the EVRON logo. Update styling to make it more visible using brand-green color (#2ecc71) accents and appropriate typography for readability."
+          "description": "Update hero content: change headline to 'EVRON – Powering the Future of Energy', add tagline 'Drive the Future, Live the Green' below logo, update subheading to 'Advanced Lithium Batteries & Inverter Solutions for Homes, Telecom & EV Applications', replace CTA with two buttons ('Explore Products' linking to products section and 'Contact Now' linking to contact section), and ensure phone number +91 9296174465 is prominently displayed with styling"
         }
       ]
     },
     {
-      "id": "REQ-27",
-      "summary": "Update About section content to describe EVRON as an innovative energy company delivering reliable lithium battery and inverter solutions",
+      "id": "REQ-36",
+      "summary": "Apply energetic hero background with subtle energy pattern or gradient",
       "acceptanceCriteria": [
-        "About section contains professional paragraph mentioning homes, telecom infrastructure, EVs and solar systems",
-        "Text conveys EVRON as innovative energy company",
-        "Content focuses on lithium battery and inverter solutions"
+        "Hero background uses subtle energy pattern or gradient",
+        "Design feels energetic and powerful",
+        "Background complements the overall hero section design"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/HeroSection.tsx",
+          "operation": "modify",
+          "description": "Replace current background image with the new generated hero background at frontend/public/assets/generated/hero-energy-bg.dim_1920x1080.png featuring energetic and powerful subtle energy pattern or gradient"
+        }
+      ]
+    },
+    {
+      "id": "REQ-37",
+      "summary": "Replace all product images with new realistic commercial photography showing printed EVRON branding",
+      "acceptanceCriteria": [
+        "All 5 product images show matte black or white body",
+        "EVRON logo with two-leaf symbol is clearly printed on each product",
+        "Tagline 'Drive the Future, Live the Green' appears below brand name",
+        "Images use realistic commercial product photography style",
+        "Green accent lines add premium visual appeal",
+        "Branding looks printed on casing, not overlaid"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/ProductsSection.tsx",
+          "operation": "modify",
+          "description": "Update all five product image references to use the new generated images with printed EVRON branding: EV Battery to frontend/public/assets/generated/ev-battery-product.dim_800x800.png, Solar Battery to frontend/public/assets/generated/solar-battery-product.dim_800x800.png, Telecom Battery to frontend/public/assets/generated/telecom-battery-product.dim_800x800.png, Inverter 2KW to frontend/public/assets/generated/inverter-2kw-product.dim_800x800.png, and Inverter 3KW to frontend/public/assets/generated/inverter-3kw-product.dim_800x800.png"
+        }
+      ]
+    },
+    {
+      "id": "REQ-38",
+      "summary": "Reorder page sections to display Products before About",
+      "acceptanceCriteria": [
+        "Products section appears before About section in page layout",
+        "Section order follows: Hero, Products, About, Why Choose Us, Contact, Address, Footer"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Reorder component rendering so ProductsSection appears before AboutSection (new order: Hero, Products, About, Why Choose Us, Contact, Address, Footer)"
+        }
+      ]
+    },
+    {
+      "id": "REQ-39",
+      "summary": "Update EV Lithium Battery card with LiFePO4 technology details, features, and 8-year warranty",
+      "acceptanceCriteria": [
+        "EV Battery card displays LiFePO4 technology",
+        "All 7 listed features are visible",
+        "Warranty information clearly shows 8 Years Total (5Y Full + 3Y Pro-rata)"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/ProductsSection.tsx",
+          "operation": "modify",
+          "description": "Update EV Lithium Battery product card content: add Technology field showing 'Lithium Iron Phosphate (LiFePO4)', update features list to include 3000–5000 deep discharge cycles, high energy density, lightweight design, smart inbuilt BMS, overcharge & over-discharge protection, short circuit protection, long operational life, and display warranty as '5 Years Full Replacement + 3 Years Pro-rata (Total 8 Years Warranty)' with visual highlighting"
+        }
+      ]
+    },
+    {
+      "id": "REQ-40",
+      "summary": "Update Solar Storage Battery card with deep discharge features and solar system description",
+      "acceptanceCriteria": [
+        "Solar Battery card includes 'designed for solar energy systems' description",
+        "All 5 listed features are displayed",
+        "Card maintains premium product styling"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/ProductsSection.tsx",
+          "operation": "modify",
+          "description": "Update Solar Storage Battery product card: add description 'Designed for solar energy systems', update features to include deep discharge support, fast charging capability, eco-friendly lithium technology, long cycle performance, and stable voltage output"
+        }
+      ]
+    },
+    {
+      "id": "REQ-41",
+      "summary": "Update Telecom Battery card with infrastructure description and reliability features",
+      "acceptanceCriteria": [
+        "Telecom Battery card shows telecom infrastructure description",
+        "All 5 listed features are visible",
+        "Card emphasizes reliability for telecom use"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/ProductsSection.tsx",
+          "operation": "modify",
+          "description": "Update Telecom Battery product card: add description 'High reliability lithium battery for telecom infrastructure and tower backup systems', update features to include continuous power stability, Smart BMS monitoring, temperature protection, heavy duty performance, and long lifecycle durability"
+        }
+      ]
+    },
+    {
+      "id": "REQ-42",
+      "summary": "Update 2KW Inverter card with pure sine wave specs and dual warranty",
+      "acceptanceCriteria": [
+        "2KW Inverter card displays all 5 listed features",
+        "Warranty clearly shows 8 Years Battery + 2 Years Inverter",
+        "Pure Sine Wave Output is prominently featured"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/ProductsSection.tsx",
+          "operation": "modify",
+          "description": "Update Lithium Inverter 2KW product card: add 'Pure Sine Wave Output' as primary feature, update specifications to include 2000W capacity, smart charging system, heavy load support, advanced safety protection, and display warranty as '8 Years Battery + 2 Years Inverter' with visual highlighting"
+        }
+      ]
+    },
+    {
+      "id": "REQ-43",
+      "summary": "Update 3KW Inverter card with high power specs and dual warranty",
+      "acceptanceCriteria": [
+        "3KW Inverter card displays all 5 listed features",
+        "Warranty clearly shows 8 Years Battery + 2 Years Inverter",
+        "3000W power output is prominently featured"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/ProductsSection.tsx",
+          "operation": "modify",
+          "description": "Update Lithium Inverter 3KW product card: emphasize '3000W high power output', update specifications to include Smart BMS integration, high efficiency performance, overload & short circuit protection, reliable backup solution, and display warranty as '8 Years Battery + 2 Years Inverter' with visual highlighting"
+        }
+      ]
+    },
+    {
+      "id": "REQ-44",
+      "summary": "Update About section with full company description and GST details",
+      "acceptanceCriteria": [
+        "About section title reads 'About EVRON India Private Limited'",
+        "Content mentions GST registration and Jharkhand location",
+        "Describes LiFePO4 batteries, telecom batteries, solar storage, and inverter systems",
+        "Mentions BMS protection and 3000-5000 cycle performance",
+        "Covers homes, telecom networks, and electric mobility applications"
       ],
       "file_operations": [
         {
           "path": "frontend/src/components/AboutSection.tsx",
           "operation": "modify",
-          "description": "Replace the current about text with a strong professional paragraph describing EVRON as an innovative energy company delivering reliable lithium battery and inverter solutions for homes, telecom infrastructure, EVs, and solar systems. Maintain the existing card layout with Battery, Shield, and Zap icons while updating the main descriptive content to reflect the new messaging."
+          "description": "Update About section title to 'About EVRON India Private Limited' and replace content with: 'EVRON India Private Limited is a GST registered energy solutions company based in Jharkhand, India. We specialize in advanced Lithium Iron Phosphate (LiFePO4) batteries, Telecom Batteries, Solar Storage Solutions and Lithium Inverter Systems designed to deliver long-lasting, energy-efficient and sustainable power solutions. Our products are engineered with advanced BMS protection, 3000–5000 cycle performance and high safety standards to ensure reliable power backup for homes, telecom networks and electric mobility solutions.'"
         }
       ]
     },
     {
-      "id": "REQ-28",
-      "summary": "Remove Industrial Battery Pack product card completely from the Products section",
+      "id": "REQ-45",
+      "summary": "Add company legal details display to About section with GSTIN and office addresses",
       "acceptanceCriteria": [
-        "Industrial Battery Pack product card is no longer displayed",
-        "Products section does not reference industrial batteries"
+        "About section displays legal name and GSTIN",
+        "Both registered office and branch office addresses are shown",
+        "Information is formatted professionally and clearly"
       ],
       "file_operations": [
         {
-          "path": "frontend/src/components/ProductsSection.tsx",
+          "path": "frontend/src/components/AboutSection.tsx",
           "operation": "modify",
-          "description": "Remove the Industrial Battery Pack product card entirely from the products grid. Ensure the remaining product cards (EV Battery, Solar Battery, and any newly added products) maintain proper responsive grid layout without the industrial battery entry."
+          "description": "Add company details display below main About content showing Legal Name: EVRON India Private Limited, GSTIN: 20AAJCE1166D1Z8, Registered Office: P-22, City Center, Sector-4, Near Circus Maidan, Bokaro Steel City – 827004, and Branch Office: Plot No-673, Ranchi Road, Redma Women's ITI, South Daltonganj, Palamu, Jharkhand – 822102, formatted as professional information cards or structured layout"
         }
       ]
     },
     {
-      "id": "REQ-29",
-      "summary": "Add Telecom Battery product card to the Products section with professional description and premium styling",
+      "id": "REQ-46",
+      "summary": "Update Why Choose Us section to display seven specific benefits",
       "acceptanceCriteria": [
-        "Telecom Battery appears as a product card in Products section",
-        "Card displays product name, description and follows existing card styling",
-        "Card includes product image with EVRON branding"
-      ],
-      "file_operations": [
-        {
-          "path": "frontend/src/components/ProductsSection.tsx",
-          "operation": "modify",
-          "description": "Add a new Telecom Battery product card to the products grid using the generated image at frontend/public/assets/generated/telecom-battery.dim_800x600.png. Include a professional description highlighting reliability for telecom infrastructure. Follow the existing card styling pattern with icon, title, image, and description. Position it appropriately within the product grid after EV and Solar batteries."
-        }
-      ]
-    },
-    {
-      "id": "REQ-30",
-      "summary": "Split the existing Lithium Inverter product into two separate product cards: Lithium Inverter 2KW (2000W) and Lithium Inverter 3KW (3000W)",
-      "acceptanceCriteria": [
-        "Lithium Inverter 2KW (2000W) displays as separate product card",
-        "Lithium Inverter 3KW (3000W) displays as separate product card",
-        "Both cards include power ratings in title",
-        "Each card has distinct product image with EVRON branding"
-      ],
-      "file_operations": [
-        {
-          "path": "frontend/src/components/ProductsSection.tsx",
-          "operation": "modify",
-          "description": "Replace the single Lithium Inverter product card with two separate cards: 'Lithium Inverter 2KW (2000W)' using the generated image at frontend/public/assets/generated/inverter-2kw.dim_800x600.png and 'Lithium Inverter 3KW (3000W)' using frontend/public/assets/generated/inverter-3kw.dim_800x600.png. Each card should display the power rating prominently in the title and include appropriate descriptions highlighting their respective power capacities. Maintain consistent styling with other product cards."
-        }
-      ]
-    },
-    {
-      "id": "REQ-31",
-      "summary": "Update Why Choose EVRON section to display six benefits including Advanced BMS Technology",
-      "acceptanceCriteria": [
-        "All six benefits are displayed in Why Choose EVRON section",
-        "Advanced BMS Technology is included as the sixth benefit",
-        "Each benefit displays with appropriate icon and description"
+        "Section displays exactly 7 benefit cards",
+        "All listed benefits are included with appropriate icons",
+        "Benefits maintain consistent styling and spacing"
       ],
       "file_operations": [
         {
           "path": "frontend/src/components/WhyChooseUsSection.tsx",
           "operation": "modify",
-          "description": "Update the benefits section to display all six benefits: Long Life Cycle, Fast Charging Technology, High Safety Standards, Energy Efficient Systems, Reliable Power Backup, and Advanced BMS Technology. Add the sixth benefit card for Advanced BMS Technology with an appropriate icon (Cpu or CircuitBoard) and description. Ensure the grid layout accommodates six items with proper responsive behavior and maintains consistent styling with hover effects."
+          "description": "Update benefits to display exactly seven items: Long Life Lithium Technology, 3000–5000 Deep Cycles, Smart Advanced BMS, 8 Years Warranty, High Safety Standards, Energy Efficient Systems, and Reliable After-Sales Support, each with appropriate icons and consistent card styling"
         }
       ]
     },
     {
-      "id": "REQ-32",
-      "summary": "Apply premium modern corporate design with clean spacing, energy-themed background, and strong green highlights throughout the website",
+      "id": "REQ-47",
+      "summary": "Add Phone field to contact form and ensure contact details are prominently displayed",
       "acceptanceCriteria": [
-        "Website displays modern corporate aesthetic",
-        "Spacing between sections is clean and premium",
-        "Background uses energy theme",
-        "Green color #2ecc71 is prominently used for highlights and accents",
-        "Layout appears professional and polished"
+        "Contact form includes all four fields: Name, Phone, Email, Message",
+        "Phone number +91 9296174465 is prominently displayed",
+        "Email infoevronindia@gmail.com is clearly visible",
+        "Backend validates and stores phone field data"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/ContactSection.tsx",
+          "operation": "modify",
+          "description": "Add Phone field to contact form between Name and Email fields, update form submission to include phone value in backend call (backend already supports submitContactForm with phone parameter), ensure phone number +91 9296174465 and email infoevronindia@gmail.com are prominently displayed in contact information cards"
+        },
+        {
+          "path": "frontend/src/hooks/useQueries.ts",
+          "operation": "modify",
+          "description": "Update contact form mutation to pass phone parameter to backend submitContactForm method (backend interface already accepts name, phone, email, message parameters)"
+        }
+      ]
+    },
+    {
+      "id": "REQ-48",
+      "summary": "Create Terms & Conditions page with warranty policies and exclusions",
+      "acceptanceCriteria": [
+        "New Terms & Conditions page exists with proper routing",
+        "Page includes all required disclaimers and policies",
+        "Warranty policy clearly states 8Y battery and 2Y inverter coverage",
+        "All 5 warranty exclusions are listed",
+        "Page is accessible from footer navigation"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/TermsPage.tsx",
+          "operation": "create",
+          "description": "Create new Terms & Conditions page component with content including: product specifications subject to change disclaimer, warranty validity requiring original invoice, installation guidelines requirement, company's right to inspect products before warranty approval, warranty policy details (Lithium Battery: 5 Years Full Replacement + 3 Years Pro-rata = Total 8 Years Warranty, Inverter: 2 Years against manufacturing defects), and warranty exclusions (physical damage, water damage, improper installation, unauthorized modifications, external wiring faults), styled with premium corporate design matching the site theme"
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Add React Router routing configuration to support navigating to Terms & Conditions page at /terms route, and update main component structure to render TermsPage when route matches"
+        }
+      ]
+    },
+    {
+      "id": "REQ-49",
+      "summary": "Create Privacy Policy page accessible from footer",
+      "acceptanceCriteria": [
+        "New Privacy Policy page exists with proper routing",
+        "Page contains appropriate privacy policy content",
+        "Page is accessible from footer navigation"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/PrivacyPage.tsx",
+          "operation": "create",
+          "description": "Create new Privacy Policy page component with standard privacy policy content appropriate for an energy company website (data collection, usage, protection, user rights, cookies, contact information), styled with premium corporate design matching the site theme"
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Add routing configuration for Privacy Policy page at /privacy route in the React Router setup"
+        }
+      ]
+    },
+    {
+      "id": "REQ-50",
+      "summary": "Update footer with complete navigation links, tagline, contact info, and GST statement",
+      "acceptanceCriteria": [
+        "Footer displays all 5 navigation links with proper routing",
+        "Tagline 'Drive the Future, Live the Green' is visible",
+        "Contact information includes phone and email",
+        "GST registered statement is displayed prominently"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/Footer.tsx",
+          "operation": "modify",
+          "description": "Update footer navigation to include five links (About EVRON linking to about section, Products linking to products section, Terms & Conditions linking to /terms, Privacy Policy linking to /privacy, Contact linking to contact section), ensure tagline 'Drive the Future, Live the Green' is displayed, show phone +91 9296174465 and email infoevronindia@gmail.com, and add statement 'EVRON India Private Limited is a GST registered company operating under Indian corporate regulations' prominently in footer"
+        }
+      ]
+    },
+    {
+      "id": "REQ-51",
+      "summary": "Apply premium modern corporate design system throughout the website",
+      "acceptanceCriteria": [
+        "Design uses clean corporate layout with premium spacing",
+        "Green (#2ecc71) color is used for highlights and accents",
+        "GST Registered badge style element is visible",
+        "Warranty information is visually highlighted on product cards",
+        "Product grid displays professionally",
+        "Subtle energy-themed background is applied appropriately",
+        "Website is fully responsive on mobile, tablet, and desktop"
       ],
       "file_operations": [
         {
           "path": "frontend/src/index.css",
           "operation": "modify",
-          "description": "Update global styles to enhance premium spacing, refine the brand-green color implementation for #2ecc71 accents, and ensure consistent modern corporate aesthetic. Add or refine utility classes for section spacing, typography hierarchy, and green highlight treatments that support the professional layout."
+          "description": "Update global styles to implement premium modern corporate design with clean layout spacing, ensure green (#2ecc71) is used consistently for highlights and accents across brand-green utilities, add subtle energy-themed background patterns or gradients where appropriate, and ensure mobile responsiveness with proper breakpoints"
         },
         {
-          "path": "frontend/src/components/HeroSection.tsx",
+          "path": "frontend/tailwind.config.js",
           "operation": "modify",
-          "description": "Update hero background to use the generated energy-themed background image at frontend/public/assets/generated/hero-background.dim_1920x1080.png. Apply gradient overlay to ensure text readability while showcasing the energy-themed aesthetic. Enhance spacing and layout for a premium corporate feel with strong green (#2ecc71) accents on call-to-action elements."
+          "description": "Extend Tailwind configuration to support premium corporate design with additional spacing utilities, ensure brand-green color (#2ecc71) is properly defined and accessible, and add any custom animations or utilities needed for the energy-themed design"
         },
         {
-          "path": "frontend/src/App.tsx",
+          "path": "frontend/src/components/ProductsSection.tsx",
           "operation": "modify",
-          "description": "Review and adjust section spacing throughout the main app component to ensure premium clean spacing between all sections (Hero, About, Products, WhyChooseUs, Contact, Address, Footer). Apply consistent padding and margin utilities for a polished professional layout."
+          "description": "Add visual highlighting to warranty information on product cards using badge-style elements or highlighted text blocks, ensure professional product grid layout with premium spacing, and verify green accent colors are applied consistently"
+        },
+        {
+          "path": "frontend/src/components/AboutSection.tsx",
+          "operation": "modify",
+          "description": "Add GST Registered badge style element (using generated image at frontend/public/assets/generated/gst-badge.dim_200x200.png or styled component) near company details to visually emphasize GST registration status"
         }
       ]
     },
     {
-      "id": "REQ-33",
-      "summary": "Render all generated product images and brand assets as static files in frontend/public/assets/generated directory",
+      "id": "REQ-52",
+      "summary": "Apply bold modern sans-serif typography consistently throughout the website",
       "acceptanceCriteria": [
-        "All generated images are saved in frontend/public/assets/generated",
-        "Images are referenced as static assets in frontend components",
-        "Images do not route through backend"
+        "All headings use bold modern sans-serif fonts",
+        "Typography is consistent across all sections",
+        "Font weights and sizes create clear visual hierarchy"
       ],
       "file_operations": [
         {
-          "path": "frontend/src/components/ProductsSection.tsx",
+          "path": "frontend/src/index.css",
           "operation": "modify",
-          "description": "Ensure all product images reference static assets from frontend/public/assets/generated: ev-battery.dim_800x600.png for EV Battery, solar-battery.dim_800x600.png for Solar Battery, telecom-battery.dim_800x600.png for Telecom Battery, inverter-2kw.dim_800x600.png for Inverter 2KW, and inverter-3kw.dim_800x600.png for Inverter 3KW. Use standard img src attributes pointing to /assets/generated/[filename] paths to load images as static frontend assets without backend involvement."
+          "description": "Update global typography styles to use bold modern sans-serif fonts for all headings and key text elements, ensure consistent font-weight and font-family declarations create clear visual hierarchy across h1, h2, h3 elements and body text"
         },
         {
-          "path": "frontend/src/components/HeroSection.tsx",
+          "path": "frontend/tailwind.config.js",
           "operation": "modify",
-          "description": "Ensure the logo image at frontend/public/assets/generated/evron-logo.dim_400x200.png and hero background at frontend/public/assets/generated/hero-background.dim_1920x1080.png are referenced as static assets using standard img src or CSS background-image properties pointing to /assets/generated/[filename] paths."
-        },
-        {
-          "path": "frontend/src/components/Footer.tsx",
-          "operation": "modify",
-          "description": "Ensure the footer logo references the static asset at frontend/public/assets/generated/evron-logo.dim_400x200.png using standard img src attribute pointing to /assets/generated/evron-logo.dim_400x200.png."
+          "description": "Configure Tailwind typography with bold modern sans-serif font family (e.g., Inter, Poppins, or system sans-serif stack) ensuring it applies consistently across all components"
         }
       ]
     }

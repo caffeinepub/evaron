@@ -1,196 +1,399 @@
 {
   "kind": "build_request",
-  "title": "Rebuild EVRON website with new logo, remove Industrial Battery, add Telecom Battery and split Inverter products",
-  "projectName": "EVRON Energy",
+  "title": "Comprehensive EVRON website redesign with brand identity, detailed product specs, Terms & Conditions, and premium corporate styling",
+  "projectName": "EVRON India",
   "priority": "normal",
   "requirements": [
     {
-      "id": "REQ-25",
-      "text": "Design and generate a new EVRON logo featuring two symmetrical green leaves (#2ecc71) that form a subtle 'V' shape representing growth and energy, using a bold modern sans-serif font, with a minimal eco-friendly corporate aesthetic",
+      "id": "REQ-34",
+      "text": "Redesign the EVRON logo as a powerful corporate brand identity: two symmetrical green leaves forming a subtle 'V' shape representing sustainability, growth and clean energy, with 'EVRON' text in bold modern sans-serif font below, using green (#2ecc71) and black for contrast, in a minimal, clean, scalable design that looks realistic and professional, not cartoonish",
       "target": "frontend",
       "source": {
         "messageIds": [
           "msg-latest"
         ],
         "quotes": [
-          "Design a clean and powerful logo for EVRON using two symmetrical green leaves. The two leaves should form a subtle \"V\" shape representing growth and energy. Use a bold modern sans-serif font. Primary green color: #2ecc71"
+          "Design a powerful corporate logo for EVRON: Two symmetrical green leaves forming a subtle \"V\" shape, Leaves should represent sustainability, growth and clean energy, EVRON text in bold modern sans-serif font, Primary green: #2ecc71, Black for text contrast, Minimal, clean and scalable design, Logo must look realistic, professional and corporate — not cartoonish"
         ]
       },
       "acceptanceCriteria": [
-        "Logo displays two symmetrical green leaves in #2ecc71 color",
-        "Leaves form a subtle V shape",
-        "Uses bold modern sans-serif font for EVRON text",
-        "Design appears minimal, eco-friendly and corporate"
+        "Logo features two symmetrical green leaves in a V-shape design",
+        "EVRON text is in bold modern sans-serif below the leaf symbol",
+        "Uses green (#2ecc71) and black colors",
+        "Design is minimal, clean, and scalable",
+        "Appears professional and corporate, not cartoonish"
       ]
     },
     {
-      "id": "REQ-26",
-      "text": "Display the tagline 'Drive the Future, Live the Green' clearly visible below the EVRON logo in the hero section",
+      "id": "REQ-35",
+      "text": "Update hero section headline to 'EVRON – Powering the Future of Energy', display tagline 'Drive the Future, Live the Green' below logo, update subheading to 'Advanced Lithium Batteries & Inverter Solutions for Homes, Telecom & EV Applications', update CTA buttons to 'Explore Products' and 'Contact Now', and ensure phone number '+91 9296174465' is prominently displayed",
       "target": "frontend",
       "source": {
         "messageIds": [
           "msg-latest"
         ],
         "quotes": [
-          "Tagline clearly visible: Drive the Future, Live the Green"
+          "Headline: EVRON – Powering the Future of Energy, Tagline below logo: Drive the Future, Live the Green, Subheading: Advanced Lithium Batteries & Inverter Solutions for Homes, Telecom & EV Applications, Call-to-Action Button: \"Explore Products\" \"Contact Now\", Display phone number prominently: +91 9296174465"
         ]
       },
       "acceptanceCriteria": [
-        "Tagline 'Drive the Future, Live the Green' appears below logo in hero section",
-        "Tagline is clearly readable and prominently displayed"
+        "Hero headline reads 'EVRON – Powering the Future of Energy'",
+        "Tagline 'Drive the Future, Live the Green' appears below logo",
+        "Subheading includes Homes, Telecom & EV Applications",
+        "Two CTA buttons display 'Explore Products' and 'Contact Now'",
+        "Phone number +91 9296174465 is prominently visible"
       ]
     },
     {
-      "id": "REQ-27",
-      "text": "Update About section content to describe EVRON as an innovative energy company delivering reliable lithium battery and inverter solutions for homes, telecom infrastructure, EVs and solar systems with strong professional tone",
+      "id": "REQ-36",
+      "text": "Create an energetic and powerful hero section background with a subtle energy pattern or gradient that feels dynamic and impactful",
       "target": "frontend",
       "source": {
         "messageIds": [
           "msg-latest"
         ],
         "quotes": [
-          "Write a strong professional paragraph describing EVRON as an innovative energy company delivering reliable lithium battery and inverter solutions for homes, telecom infrastructure, EVs and solar systems."
+          "Background should feel energetic and powerful (subtle energy pattern or gradient)"
         ]
       },
       "acceptanceCriteria": [
-        "About section contains professional paragraph mentioning homes, telecom infrastructure, EVs and solar systems",
-        "Text conveys EVRON as innovative energy company",
-        "Content focuses on lithium battery and inverter solutions"
+        "Hero background uses subtle energy pattern or gradient",
+        "Design feels energetic and powerful",
+        "Background complements the overall hero section design"
       ]
     },
     {
-      "id": "REQ-28",
-      "text": "Remove Industrial Battery Pack product card completely from the Products section",
+      "id": "REQ-37",
+      "text": "Regenerate all product images (EV Battery, Solar Battery, Telecom Battery, Inverter 2KW, Inverter 3KW) with realistic commercial product photography style featuring matte black or white body, EVRON logo clearly printed (two-leaf green logo above EVRON text), tagline 'Drive the Future, Live the Green' printed below brand name, green accent lines for premium look, with branding appearing printed on battery casing (not floating text)",
       "target": "frontend",
       "source": {
         "messageIds": [
           "msg-latest"
         ],
         "quotes": [
-          "Remove Industrial Battery completely."
+          "All product images must: Have matte black or white body, EVRON logo clearly printed, Two-leaf green logo above EVRON text, Tagline printed below brand name, Realistic commercial product photography style, Green accent lines for premium look, Branding must look printed on battery casing — not floating text"
         ]
       },
       "acceptanceCriteria": [
-        "Industrial Battery Pack product card is no longer displayed",
-        "Products section does not reference industrial batteries"
+        "All 5 product images show matte black or white body",
+        "EVRON logo with two-leaf symbol is clearly printed on each product",
+        "Tagline 'Drive the Future, Live the Green' appears below brand name",
+        "Images use realistic commercial product photography style",
+        "Green accent lines add premium visual appeal",
+        "Branding looks printed on casing, not overlaid"
       ]
     },
     {
-      "id": "REQ-29",
-      "text": "Add Telecom Battery product card to the Products section with professional description and premium styling",
+      "id": "REQ-38",
+      "text": "Reorder page sections so Products section displays BEFORE About section in the main App component",
       "target": "frontend",
       "source": {
         "messageIds": [
           "msg-latest"
         ],
         "quotes": [
-          "Telecom Batteries",
-          "- Telecom Battery"
+          "📦 PRODUCTS SECTION (Show Before About)"
         ]
       },
       "acceptanceCriteria": [
-        "Telecom Battery appears as a product card in Products section",
-        "Card displays product name, description and follows existing card styling",
-        "Card includes product image with EVRON branding"
+        "Products section appears before About section in page layout",
+        "Section order follows: Hero, Products, About, Why Choose Us, Contact, Address, Footer"
       ]
     },
     {
-      "id": "REQ-30",
-      "text": "Split the existing Lithium Inverter product into two separate product cards: 'Lithium Inverter 2KW (2000W)' and 'Lithium Inverter 3KW (3000W)'",
+      "id": "REQ-39",
+      "text": "Update EV Lithium Battery product card to display Technology: Lithium Iron Phosphate (LiFePO4), Features: 3000–5000 deep discharge cycles, high energy density, lightweight design, smart inbuilt BMS, overcharge & over-discharge protection, short circuit protection, long operational life, and Warranty: 5 Years Full Replacement + 3 Years Pro-rata (Total 8 Years Warranty)",
       "target": "frontend",
       "source": {
         "messageIds": [
           "msg-latest"
         ],
         "quotes": [
-          "- Lithium Inverter 2KW (2000W)\n- Lithium Inverter 3KW (3000W)"
+          "1️⃣ EV Lithium Battery, Technology: Lithium Iron Phosphate (LiFePO4), Features: 3000–5000 deep discharge cycles, High energy density, Lightweight design, Smart inbuilt BMS, Overcharge & over-discharge protection, Short circuit protection, Long operational life, Warranty: 5 Years Full Replacement + 3 Years Pro-rata (Total 8 Years Warranty)"
         ]
       },
       "acceptanceCriteria": [
-        "Lithium Inverter 2KW (2000W) displays as separate product card",
-        "Lithium Inverter 3KW (3000W) displays as separate product card",
-        "Both cards include power ratings in title",
-        "Each card has distinct product image with EVRON branding"
+        "EV Battery card displays LiFePO4 technology",
+        "All 7 listed features are visible",
+        "Warranty information clearly shows 8 Years Total (5Y Full + 3Y Pro-rata)"
       ]
     },
     {
-      "id": "REQ-31",
-      "text": "Update Why Choose EVRON section to display six benefits: 'Long Life Cycle', 'Fast Charging Technology', 'High Safety Standards', 'Energy Efficient Systems', 'Reliable Power Backup', and 'Advanced BMS Technology'",
+      "id": "REQ-40",
+      "text": "Update Solar Storage Battery product card to display Features: Deep discharge support, fast charging capability, eco-friendly lithium technology, long cycle performance, stable voltage output, with description noting it's designed for solar energy systems",
       "target": "frontend",
       "source": {
         "messageIds": [
           "msg-latest"
         ],
         "quotes": [
-          "- Long Life Cycle\n- Fast Charging Technology\n- High Safety Standards\n- Energy Efficient Systems\n- Reliable Power Backup\n- Advanced BMS Technology"
+          "2️⃣ Solar Storage Battery, Designed for solar energy systems, Features: Deep discharge support, Fast charging capability, Eco-friendly lithium technology, Long cycle performance, Stable voltage output"
         ]
       },
       "acceptanceCriteria": [
-        "All six benefits are displayed in Why Choose EVRON section",
-        "Advanced BMS Technology is included as the sixth benefit",
-        "Each benefit displays with appropriate icon and description"
+        "Solar Battery card includes 'designed for solar energy systems' description",
+        "All 5 listed features are displayed",
+        "Card maintains premium product styling"
       ]
     },
     {
-      "id": "REQ-32",
-      "text": "Apply premium modern corporate design with clean spacing, energy-themed background, strong green (#2ecc71) highlights, and professional layout throughout the website",
+      "id": "REQ-41",
+      "text": "Update Telecom Battery product card to display description 'High reliability lithium battery for telecom infrastructure and tower backup systems' with Features: Continuous power stability, Smart BMS monitoring, temperature protection, heavy duty performance, long lifecycle durability",
       "target": "frontend",
       "source": {
         "messageIds": [
           "msg-latest"
         ],
         "quotes": [
-          "Modern corporate layout. Premium clean spacing. Energy-themed background. Strong green highlights."
+          "3️⃣ Telecom Battery, High reliability lithium battery for telecom infrastructure and tower backup systems, Features: Continuous power stability, Smart BMS monitoring, Temperature protection, Heavy duty performance, Long lifecycle durability"
         ]
       },
       "acceptanceCriteria": [
-        "Website displays modern corporate aesthetic",
-        "Spacing between sections is clean and premium",
-        "Background uses energy theme",
-        "Green color #2ecc71 is prominently used for highlights and accents",
-        "Layout appears professional and polished"
+        "Telecom Battery card shows telecom infrastructure description",
+        "All 5 listed features are visible",
+        "Card emphasizes reliability for telecom use"
       ]
     },
     {
-      "id": "REQ-33",
-      "text": "Render all generated product images and brand assets (logo, product images for EV Battery, Solar Battery, Telecom Battery, Inverter 2KW, Inverter 3KW) as static files in frontend/public/assets/generated directory",
+      "id": "REQ-42",
+      "text": "Update Lithium Inverter 2KW product card to display specifications: Pure Sine Wave Output, 2000W capacity, smart charging system, heavy load support, advanced safety protection, and Warranty: 8 Years Battery + 2 Years Inverter",
       "target": "frontend",
       "source": {
         "messageIds": [
           "msg-latest"
+        ],
+        "quotes": [
+          "4️⃣ Lithium Inverter 2KW (2000W), Pure Sine Wave Output, 2000W capacity, Smart charging system, Heavy load support, Advanced safety protection, Warranty: 8 Years Battery + 2 Years Inverter"
         ]
       },
       "acceptanceCriteria": [
-        "All generated images are saved in frontend/public/assets/generated",
-        "Images are referenced as static assets in frontend components",
-        "Images do not route through backend"
+        "2KW Inverter card displays all 5 listed features",
+        "Warranty clearly shows 8 Years Battery + 2 Years Inverter",
+        "Pure Sine Wave Output is prominently featured"
+      ]
+    },
+    {
+      "id": "REQ-43",
+      "text": "Update Lithium Inverter 3KW product card to display specifications: 3000W high power output, Smart BMS integration, high efficiency performance, overload & short circuit protection, reliable backup solution, and Warranty: 8 Years Battery + 2 Years Inverter",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-latest"
+        ],
+        "quotes": [
+          "5️⃣ Lithium Inverter 3KW (3000W), 3000W high power output, Smart BMS integration, High efficiency performance, Overload & short circuit protection, Reliable backup solution, Warranty: 8 Years Battery + 2 Years Inverter"
+        ]
+      },
+      "acceptanceCriteria": [
+        "3KW Inverter card displays all 5 listed features",
+        "Warranty clearly shows 8 Years Battery + 2 Years Inverter",
+        "3000W power output is prominently featured"
+      ]
+    },
+    {
+      "id": "REQ-44",
+      "text": "Update About section title to 'About EVRON India Private Limited' and replace content with: 'EVRON India Private Limited is a GST registered energy solutions company based in Jharkhand, India. We specialize in advanced Lithium Iron Phosphate (LiFePO4) batteries, Telecom Batteries, Solar Storage Solutions and Lithium Inverter Systems designed to deliver long-lasting, energy-efficient and sustainable power solutions. Our products are engineered with advanced BMS protection, 3000–5000 cycle performance and high safety standards to ensure reliable power backup for homes, telecom networks and electric mobility solutions.'",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-latest"
+        ],
+        "quotes": [
+          "Title: About EVRON India Private Limited, EVRON India Private Limited is a GST registered energy solutions company based in Jharkhand, India. We specialize in advanced Lithium Iron Phosphate (LiFePO4) batteries, Telecom Batteries, Solar Storage Solutions and Lithium Inverter Systems designed to deliver long-lasting, energy-efficient and sustainable power solutions. Our products are engineered with advanced BMS protection, 3000–5000 cycle performance and high safety standards to ensure reliable power backup for homes, telecom networks and electric mobility solutions."
+        ]
+      },
+      "acceptanceCriteria": [
+        "About section title reads 'About EVRON India Private Limited'",
+        "Content mentions GST registration and Jharkhand location",
+        "Describes LiFePO4 batteries, telecom batteries, solar storage, and inverter systems",
+        "Mentions BMS protection and 3000-5000 cycle performance",
+        "Covers homes, telecom networks, and electric mobility applications"
+      ]
+    },
+    {
+      "id": "REQ-45",
+      "text": "Add company details display to About section showing Legal Name: EVRON India Private Limited, GSTIN: 20AAJCE1166D1Z8, Registered Office: P-22, City Center, Sector-4, Near Circus Maidan, Bokaro Steel City – 827004, and Branch Office: Plot No-673, Ranchi Road, Redma Women's ITI, South Daltonganj, Palamu, Jharkhand – 822102",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-latest"
+        ],
+        "quotes": [
+          "Company Details: Legal Name: EVRON India Private Limited, GSTIN: 20AAJCE1166D1Z8, Registered Office: P-22, City Center, Sector-4, Near Circus Maidan, Bokaro Steel City – 827004, Branch Office: Plot No-673, Ranchi Road, Redma Women's ITI, South Daltonganj, Palamu, Jharkhand – 822102"
+        ]
+      },
+      "acceptanceCriteria": [
+        "About section displays legal name and GSTIN",
+        "Both registered office and branch office addresses are shown",
+        "Information is formatted professionally and clearly"
+      ]
+    },
+    {
+      "id": "REQ-46",
+      "text": "Update Why Choose EVRON section to display seven benefits: Long Life Lithium Technology, 3000–5000 Deep Cycles, Smart Advanced BMS, 8 Years Warranty, High Safety Standards, Energy Efficient Systems, and Reliable After-Sales Support",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-latest"
+        ],
+        "quotes": [
+          "⭐ WHY CHOOSE EVRON, Long Life Lithium Technology, 3000–5000 Deep Cycles, Smart Advanced BMS, 8 Years Warranty, High Safety Standards, Energy Efficient Systems, Reliable After-Sales Support"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Section displays exactly 7 benefit cards",
+        "All listed benefits are included with appropriate icons",
+        "Benefits maintain consistent styling and spacing"
+      ]
+    },
+    {
+      "id": "REQ-47",
+      "text": "Update Contact form to include Name, Phone, Email, and Message fields (add Phone field if not present) and ensure phone number '+91 9296174465' and email 'infoevronindia@gmail.com' are clearly displayed",
+      "target": "both",
+      "source": {
+        "messageIds": [
+          "msg-latest"
+        ],
+        "quotes": [
+          "Include professional contact form: Name, Phone, Email, Message, Display clearly: Phone: +91 9296174465, Email: infoevronindia@gmail.com"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Contact form includes all four fields: Name, Phone, Email, Message",
+        "Phone number +91 9296174465 is prominently displayed",
+        "Email infoevronindia@gmail.com is clearly visible",
+        "Backend validates and stores phone field data"
+      ]
+    },
+    {
+      "id": "REQ-48",
+      "text": "Create a new Terms & Conditions page accessible from footer navigation with content including: product specifications subject to change disclaimer, warranty validity requiring original invoice, installation guidelines requirement, company's right to inspect products before warranty approval, warranty policy details (Lithium Battery: 5 Years Full Replacement + 3 Years Pro-rata = Total 8 Years Warranty, Inverter: 2 Years against manufacturing defects), and warranty exclusions (physical damage, water damage, improper installation, unauthorized modifications, external wiring faults)",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-latest"
+        ],
+        "quotes": [
+          "📜 TERMS & CONDITIONS PAGE, Include: Product specifications subject to change without notice. Warranty valid only with original invoice. Installation must follow recommended guidelines. Company reserves right to inspect product before warranty approval. Warranty Policy: Lithium Battery: 5 Years Full Replacement + 3 Years Pro-rata Total 8 Years Warranty, Inverter: 2 Years against manufacturing defects, Warranty does not cover: Physical damage, Water damage, Improper installation, Unauthorized modifications, External wiring faults"
+        ]
+      },
+      "acceptanceCriteria": [
+        "New Terms & Conditions page exists with proper routing",
+        "Page includes all required disclaimers and policies",
+        "Warranty policy clearly states 8Y battery and 2Y inverter coverage",
+        "All 5 warranty exclusions are listed",
+        "Page is accessible from footer navigation"
+      ]
+    },
+    {
+      "id": "REQ-49",
+      "text": "Create a Privacy Policy page accessible from footer navigation with standard privacy policy content appropriate for an energy company website",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-latest"
+        ],
+        "quotes": [
+          "Footer links: About EVRON, Products, Terms & Conditions, Privacy Policy, Contact"
+        ]
+      },
+      "acceptanceCriteria": [
+        "New Privacy Policy page exists with proper routing",
+        "Page contains appropriate privacy policy content",
+        "Page is accessible from footer navigation"
+      ]
+    },
+    {
+      "id": "REQ-50",
+      "text": "Update footer to include navigation links (About EVRON, Products, Terms & Conditions, Privacy Policy, Contact), display tagline 'Drive the Future, Live the Green', show phone '+91 9296174465' and email 'infoevronindia@gmail.com', and add statement 'EVRON India Private Limited is a GST registered company operating under Indian corporate regulations'",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-latest"
+        ],
+        "quotes": [
+          "Footer links: About EVRON, Products, Terms & Conditions, Privacy Policy, Contact, Add footer statement: \"EVRON India Private Limited is a GST registered company operating under Indian corporate regulations.\""
+        ]
+      },
+      "acceptanceCriteria": [
+        "Footer displays all 5 navigation links with proper routing",
+        "Tagline 'Drive the Future, Live the Green' is visible",
+        "Contact information includes phone and email",
+        "GST registered statement is displayed prominently"
+      ]
+    },
+    {
+      "id": "REQ-51",
+      "text": "Apply premium modern corporate design throughout the website with clean corporate layout, premium spacing, green (#2ecc71) highlight accents, GST Registered badge style element, warranty highlighted visually on product cards, professional product grid, energy-themed subtle background, and ensure full mobile responsiveness",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-latest"
+        ],
+        "quotes": [
+          "🎨 DESIGN REQUIREMENTS, Clean corporate layout, Premium spacing, Green highlight accents, GST Registered badge style element, Warranty highlighted visually, Professional product grid, Energy-themed subtle background, Fully mobile responsive"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Design uses clean corporate layout with premium spacing",
+        "Green (#2ecc71) color is used for highlights and accents",
+        "GST Registered badge style element is visible",
+        "Warranty information is visually highlighted on product cards",
+        "Product grid displays professionally",
+        "Subtle energy-themed background is applied appropriately",
+        "Website is fully responsive on mobile, tablet, and desktop"
+      ]
+    },
+    {
+      "id": "REQ-52",
+      "text": "Ensure bold modern sans-serif typography is applied consistently throughout the website as per the design requirements",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-latest"
+        ],
+        "quotes": [
+          "Typography should be bold, modern sans-serif"
+        ]
+      },
+      "acceptanceCriteria": [
+        "All headings use bold modern sans-serif fonts",
+        "Typography is consistent across all sections",
+        "Font weights and sizes create clear visual hierarchy"
       ]
     }
   ],
   "constraints": [
-    "Do not change the backend contact form schema",
-    "Do not edit frontend/src/hooks/useInternetIdentity.ts",
-    "Do not edit frontend/src/hooks/useActor.ts",
-    "Do not edit frontend/src/main.tsx",
-    "Do not edit files in frontend/src/components/ui"
+    "Do not modify frontend/src/hooks/useInternetIdentity.ts, frontend/src/hooks/useActor.ts, frontend/src/main.tsx, or frontend/src/components/ui components",
+    "Backend must use single-actor architecture in backend/main.mo",
+    "All Motoko logic must remain in the main actor file",
+    "Use only React, Tailwind CSS, and React Query for frontend stack",
+    "Maintain existing contact form backend functionality",
+    "Preserve GST registration number 20AAJCE1166D1Z8",
+    "Preserve phone number +91 9296174465 and email infoevronindia@gmail.com",
+    "Maintain existing address information for Head Office and Branch Office"
   ],
   "nonGoals": [
-    "Adding new backend functionality beyond contact form",
-    "Implementing user authentication",
-    "Creating admin panel",
-    "Adding e-commerce features",
-    "Integrating payment systems",
-    "Adding real-time features or chat"
+    "Adding real-time chat or messaging features",
+    "Integrating third-party authentication beyond Internet Identity",
+    "Creating e-commerce functionality or payment processing",
+    "Adding user accounts or login system for customers",
+    "Implementing product inventory management",
+    "Creating a blog or news section",
+    "Adding multi-language support",
+    "Integrating social media APIs",
+    "Creating admin dashboard or CMS"
   ],
   "imageRequirements": {
     "required": [
-      "EVRON logo with two symmetrical green leaves forming subtle V shape, bold modern sans-serif font, green color #2ecc71, minimal eco-friendly corporate design (evron-logo.dim_400x200.png)",
-      "EV Lithium Battery product with EVRON branding: two-leaf green logo above EVRON text in bright green, tagline 'Drive the Future, Live the Green' below, matte black or white body, realistic professional printing (ev-battery.dim_800x600.png)",
-      "Solar Storage Battery product with EVRON branding: two-leaf green logo above EVRON text in bright green, tagline 'Drive the Future, Live the Green' below, matte black or white body, realistic professional printing (solar-battery.dim_800x600.png)",
-      "Telecom Battery product with EVRON branding: two-leaf green logo above EVRON text in bright green, tagline 'Drive the Future, Live the Green' below, matte black or white body, realistic professional printing (telecom-battery.dim_800x600.png)",
-      "Lithium Inverter 2KW (2000W) product with EVRON branding: two-leaf green logo above EVRON text in bright green, tagline 'Drive the Future, Live the Green' below, matte black or white body, realistic professional printing (inverter-2kw.dim_800x600.png)",
-      "Lithium Inverter 3KW (3000W) product with EVRON branding: two-leaf green logo above EVRON text in bright green, tagline 'Drive the Future, Live the Green' below, matte black or white body, realistic professional printing (inverter-3kw.dim_800x600.png)",
-      "Energy-themed hero background with modern corporate aesthetic, green accents, suitable for EVRON brand (hero-background.dim_1920x1080.png)"
+      "EVRON corporate logo with two symmetrical green leaves forming subtle V-shape above bold EVRON text in modern sans-serif, using green #2ecc71 and black colors, minimal clean scalable professional design (evron-logo.dim_400x400.png)",
+      "EV Lithium Battery product with matte black or white body, EVRON logo with two-leaf green symbol printed above EVRON text, tagline 'Drive the Future, Live the Green' printed below, green accent lines, realistic commercial product photography style, LiFePO4 battery appearance (ev-battery-product.dim_800x800.png)",
+      "Solar Storage Battery product with matte black or white body, EVRON logo with two-leaf green symbol printed above EVRON text, tagline 'Drive the Future, Live the Green' printed below, green accent lines, realistic commercial product photography style (solar-battery-product.dim_800x800.png)",
+      "Telecom Battery product with matte black or white body, EVRON logo with two-leaf green symbol printed above EVRON text, tagline 'Drive the Future, Live the Green' printed below, green accent lines, realistic commercial product photography style, tower backup battery appearance (telecom-battery-product.dim_800x800.png)",
+      "Lithium Inverter 2KW product with matte black or white body, EVRON logo with two-leaf green symbol printed above EVRON text, tagline 'Drive the Future, Live the Green' printed below, green accent lines, realistic commercial product photography style, 2000W inverter appearance (inverter-2kw-product.dim_800x800.png)",
+      "Lithium Inverter 3KW product with matte black or white body, EVRON logo with two-leaf green symbol printed above EVRON text, tagline 'Drive the Future, Live the Green' printed below, green accent lines, realistic commercial product photography style, 3000W inverter appearance (inverter-3kw-product.dim_800x800.png)",
+      "Hero section background with energetic powerful subtle energy pattern or gradient in black and green theme (hero-energy-bg.dim_1920x1080.png)",
+      "GST Registered badge style element with professional corporate design in green and black colors (gst-badge.dim_200x200.png)"
     ],
     "edits": []
   }

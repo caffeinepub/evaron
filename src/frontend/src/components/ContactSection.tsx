@@ -12,20 +12,21 @@ export default function ContactSection() {
   const { actor } = useActor();
   const [formData, setFormData] = useState({
     name: '',
+    phone: '',
     email: '',
     message: '',
   });
 
   const submitMutation = useMutation({
-    mutationFn: async (data: { name: string; email: string; message: string }) => {
+    mutationFn: async (data: { name: string; phone: string; email: string; message: string }) => {
       if (!actor) throw new Error('Backend not available');
-      await actor.submitContactForm(data.name, data.email, data.message);
+      await actor.submitContactForm(data.name, data.phone, data.email, data.message);
     },
     onSuccess: () => {
       toast.success('Message sent successfully!', {
         description: 'We will get back to you as soon as possible.',
       });
-      setFormData({ name: '', email: '', message: '' });
+      setFormData({ name: '', phone: '', email: '', message: '' });
     },
     onError: (error: Error) => {
       toast.error('Failed to send message', {
@@ -37,7 +38,7 @@ export default function ContactSection() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
-    if (!formData.name.trim() || !formData.email.trim() || !formData.message.trim()) {
+    if (!formData.name.trim() || !formData.phone.trim() || !formData.email.trim() || !formData.message.trim()) {
       toast.error('All fields are required', {
         description: 'Please fill in all fields before submitting.',
       });
@@ -62,7 +63,7 @@ export default function ContactSection() {
             Get in <span className="text-brand-green">Touch</span>
           </h2>
           <div className="w-24 h-1 bg-brand-green mx-auto mb-8" />
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-300 max-w-3xl mx-auto font-bold">
             Ready to power your future? Contact us today to discuss your battery needs
           </p>
         </div>
@@ -95,7 +96,7 @@ export default function ContactSection() {
                     <h4 className="text-lg font-bold text-white mb-1">Email</h4>
                     <a 
                       href="mailto:infoevronindia@gmail.com" 
-                      className="text-lg text-brand-green hover:text-brand-green-dark transition-colors"
+                      className="text-lg text-brand-green hover:text-brand-green-dark transition-colors break-all"
                     >
                       infoevronindia@gmail.com
                     </a>
@@ -107,7 +108,7 @@ export default function ContactSection() {
                   </div>
                   <div>
                     <h4 className="text-lg font-bold text-white mb-1">Location</h4>
-                    <p className="text-gray-300">Jharkhand, India</p>
+                    <p className="text-gray-300 font-medium">Jharkhand, India</p>
                   </div>
                 </div>
               </div>
@@ -130,6 +131,23 @@ export default function ContactSection() {
                   placeholder="Your name"
                   className="rounded-none border-2 border-gray-300 focus:border-brand-green h-12"
                   required
+                  disabled={submitMutation.isPending}
+                />
+              </div>
+              <div>
+                <Label htmlFor="phone" className="text-black font-bold text-base mb-2 block">
+                  Phone *
+                </Label>
+                <Input
+                  id="phone"
+                  name="phone"
+                  type="tel"
+                  value={formData.phone}
+                  onChange={handleChange}
+                  placeholder="Your phone number"
+                  className="rounded-none border-2 border-gray-300 focus:border-brand-green h-12"
+                  required
+                  disabled={submitMutation.isPending}
                 />
               </div>
               <div>
@@ -145,6 +163,7 @@ export default function ContactSection() {
                   placeholder="your.email@example.com"
                   className="rounded-none border-2 border-gray-300 focus:border-brand-green h-12"
                   required
+                  disabled={submitMutation.isPending}
                 />
               </div>
               <div>
@@ -156,15 +175,16 @@ export default function ContactSection() {
                   name="message"
                   value={formData.message}
                   onChange={handleChange}
-                  placeholder="Tell us about your battery needs..."
-                  className="rounded-none border-2 border-gray-300 focus:border-brand-green min-h-[150px] resize-none"
+                  placeholder="Tell us about your requirements..."
+                  className="rounded-none border-2 border-gray-300 focus:border-brand-green min-h-[150px]"
                   required
+                  disabled={submitMutation.isPending}
                 />
               </div>
               <Button
                 type="submit"
+                className="w-full bg-brand-green hover:bg-brand-green-dark text-white font-black text-lg py-6 h-auto rounded-none"
                 disabled={submitMutation.isPending}
-                className="w-full bg-brand-green hover:bg-brand-green-dark text-white font-bold text-lg py-6 h-auto rounded-none"
               >
                 {submitMutation.isPending ? (
                   <>

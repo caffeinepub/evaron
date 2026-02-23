@@ -6,9 +6,9 @@ export function useSubmitContactForm() {
   const queryClient = useQueryClient();
 
   return useMutation({
-    mutationFn: async (data: { name: string; email: string; message: string }) => {
+    mutationFn: async (data: { name: string; phone: string; email: string; message: string }) => {
       if (!actor) throw new Error('Backend actor not available');
-      await actor.submitContactForm(data.name, data.email, data.message);
+      await actor.submitContactForm(data.name, data.phone, data.email, data.message);
     },
     onSuccess: () => {
       queryClient.invalidateQueries({ queryKey: ['contact-forms'] });

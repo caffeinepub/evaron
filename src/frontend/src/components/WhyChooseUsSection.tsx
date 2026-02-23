@@ -1,16 +1,26 @@
-import { Clock, Zap, Shield, Leaf, Battery, Cpu } from 'lucide-react';
+import { Clock, Zap, Shield, Leaf, Battery, Cpu, Award } from 'lucide-react';
 
 export default function WhyChooseUsSection() {
   const benefits = [
     {
-      icon: Clock,
-      title: 'Long Life Cycle',
-      description: 'Our batteries are engineered for extended operational life with minimal degradation over time.',
+      icon: Battery,
+      title: 'Long Life Lithium Technology',
+      description: 'Our batteries are engineered with advanced lithium technology for extended operational life with minimal degradation.',
     },
     {
-      icon: Zap,
-      title: 'Fast Charging Technology',
-      description: 'Advanced charging technology enables rapid power replenishment without compromising battery health.',
+      icon: Clock,
+      title: '3000–5000 Deep Cycles',
+      description: 'Industry-leading cycle performance ensures your battery lasts for years of reliable service.',
+    },
+    {
+      icon: Cpu,
+      title: 'Smart Advanced BMS',
+      description: 'Intelligent Battery Management System monitors and optimizes performance for maximum safety and longevity.',
+    },
+    {
+      icon: Award,
+      title: '8 Years Warranty',
+      description: 'Comprehensive warranty coverage with 5 years full replacement and 3 years pro-rata protection.',
     },
     {
       icon: Shield,
@@ -23,14 +33,9 @@ export default function WhyChooseUsSection() {
       description: 'Optimized energy conversion and minimal power loss ensure maximum efficiency in every application.',
     },
     {
-      icon: Battery,
-      title: 'Reliable Power Backup',
-      description: 'Dependable backup power solutions that keep your operations running smoothly during outages.',
-    },
-    {
-      icon: Cpu,
-      title: 'Advanced BMS Technology',
-      description: 'Intelligent Battery Management System monitors and optimizes performance for maximum safety and longevity.',
+      icon: Zap,
+      title: 'Reliable After-Sales Support',
+      description: 'Dedicated customer support team ready to assist you with installation, maintenance, and service needs.',
     },
   ];
 
@@ -42,7 +47,7 @@ export default function WhyChooseUsSection() {
             Why Choose <span className="text-brand-green">EVRON</span>
           </h2>
           <div className="w-24 h-1 bg-brand-green mx-auto mb-8" />
-          <p className="text-xl text-gray-700 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-700 max-w-3xl mx-auto font-bold">
             Experience the EVRON advantage with industry-leading battery technology
           </p>
         </div>
@@ -59,7 +64,7 @@ export default function WhyChooseUsSection() {
                   <benefit.icon className="w-8 h-8 text-brand-green group-hover:text-white transition-colors duration-300" />
                 </div>
                 <h3 className="text-2xl font-black text-black mb-4">{benefit.title}</h3>
-                <p className="text-gray-700 leading-relaxed">{benefit.description}</p>
+                <p className="text-gray-700 leading-relaxed font-medium">{benefit.description}</p>
               </div>
             </div>
           ))}

@@ -1,16 +1,20 @@
 # Specification
 
 ## Summary
-**Goal:** Rebuild EVRON website with new logo design, remove Industrial Battery product, add Telecom Battery product, and split Inverter into 2KW and 3KW variants.
+**Goal:** Comprehensive redesign of the EVRON website with new brand identity, detailed product specifications, legal pages, and premium corporate styling.
 
 **Planned changes:**
-- Design and implement new EVRON logo featuring two symmetrical green leaves forming a V shape
-- Display tagline "Drive the Future, Live the Green" below logo in hero section
-- Update About section to describe EVRON as innovative energy company for homes, telecom, EVs and solar
-- Remove Industrial Battery Pack product completely
-- Add Telecom Battery product card
-- Split Lithium Inverter into two separate products: 2KW (2000W) and 3KW (3000W)
-- Update Why Choose EVRON section with six benefits including Advanced BMS Technology
-- Apply premium modern corporate design with green (#2ecc71) highlights and energy-themed background
+- Redesign EVRON logo with two symmetrical green leaves forming a V-shape
+- Update hero section with new headline, tagline, and energetic background
+- Regenerate all product images with branded EVRON logo and tagline printed on products
+- Reorder sections to display Products before About
+- Add detailed technical specifications and warranty information to all product cards
+- Update About section with full company details including GST registration and addresses
+- Expand Why Choose EVRON section to seven benefits
+- Add Phone field to contact form
+- Create new Terms & Conditions page with warranty policy and exclusions
+- Create new Privacy Policy page
+- Update footer with navigation links, tagline, contact info, and GST statement
+- Apply premium corporate design with green accents, GST badge, and modern typography throughout
 
-**User-visible outcome:** Users will see a refreshed EVRON website with a new professional logo, updated product lineup (Telecom Battery added, Industrial Battery removed, Inverters split into 2KW and 3KW models), and premium modern corporate design throughout.
+**User-visible outcome:** Users see a completely redesigned EVRON website with professional corporate branding, detailed product information with warranty coverage, legal compliance pages (Terms & Conditions, Privacy Policy), full company transparency (GST registration, addresses), and premium modern styling optimized for all devices.

@@ -30,7 +30,7 @@
         --chart-4: 0.828 0.189 84.429;
         --chart-5: 0.769 0.188 70.08;
         
-        /* EVRON Brand Colors - Green Theme */
+        /* EVRON Brand Colors - Green Theme (#2ecc71) */
         --brand-green: 0.68 0.18 145;
         --brand-green-dark: 0.58 0.18 145;
         --brand-black: 0.145 0 0;
@@ -74,13 +74,14 @@
     
     body {
         @apply bg-background text-foreground;
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
     }
     
     h1, h2, h3, h4, h5, h6 {
         @apply font-black;
+        letter-spacing: -0.02em;
     }
 }
 
@@ -111,6 +112,10 @@
     
     .hover\:text-brand-green:hover {
         color: oklch(var(--brand-green));
+    }
+    
+    .hover\:text-brand-green-dark:hover {
+        color: oklch(var(--brand-green-dark));
     }
     
     .hover\:border-brand-green:hover {

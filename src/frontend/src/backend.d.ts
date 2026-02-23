@@ -8,5 +8,5 @@ export interface None {
 }
 export type Option<T> = Some<T> | None;
 export interface backendInterface {
-    submitContactForm(name: string, email: string, message: string): Promise<void>;
+    submitContactForm(name: string, phone: string, email: string, message: string): Promise<void>;
 }

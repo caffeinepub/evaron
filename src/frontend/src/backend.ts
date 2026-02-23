@@ -90,21 +90,21 @@ export class ExternalBlob {
     }
 }
 export interface backendInterface {
-    submitContactForm(name: string, email: string, message: string): Promise<void>;
+    submitContactForm(name: string, phone: string, email: string, message: string): Promise<void>;
 }
 export class Backend implements backendInterface {
     constructor(private actor: ActorSubclass<_SERVICE>, private _uploadFile: (file: ExternalBlob) => Promise<Uint8Array>, private _downloadFile: (file: Uint8Array) => Promise<ExternalBlob>, private processError?: (error: unknown) => never){}
-    async submitContactForm(arg0: string, arg1: string, arg2: string): Promise<void> {
+    async submitContactForm(arg0: string, arg1: string, arg2: string, arg3: string): Promise<void> {
         if (this.processError) {
             try {
-                const result = await this.actor.submitContactForm(arg0, arg1, arg2);
+                const result = await this.actor.submitContactForm(arg0, arg1, arg2, arg3);
                 return result;
             } catch (e) {
                 this.processError(e);
                 throw new Error("unreachable");
             }
         } else {
-            const result = await this.actor.submitContactForm(arg0, arg1, arg2);
+            const result = await this.actor.submitContactForm(arg0, arg1, arg2, arg3);
             return result;
         }
     }

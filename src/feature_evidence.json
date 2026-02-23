@@ -2,29 +2,9 @@
   "kind": "feature_evidence_report",
   "features": [
     {
-      "featureId": "feature-create-a-hero-section-with-headline-powering-the-future-of-energy-subheading-advanced-lithium-ev-battery-solutions-and-a-contact-us-call-to-action-button-that-scrolls-to-the-contact-form",
-      "featureTitle": "Create a hero section with headline 'Powering the Future of Energy', subheading 'Advanced Lithium & EV Battery Solutions', and a 'Contact Us' call-to-action button that scrolls to the contact form",
+      "featureId": "feature-update-about-section-content-to-describe-evron-as-an-innovative-energy-company-delivering-reliable-lithium-battery-and-inverter-solutions-for-homes-telecom-infrastructure-evs-and-solar-systems-with-strong-professional-tone",
+      "featureTitle": "Update About section content to describe EVRON as an innovative energy company delivering reliable lithium battery and inverter solutions for homes, telecom infrastructure, EVs and solar systems with strong professional tone",
       "files": [
-        "frontend/src/App.tsx",
-        "frontend/src/components/HeroSection.tsx"
-      ],
-      "components": [
-        "core-infrastructure@1.0.2",
-        "shadcn-ui@1.0.0",
-        "build-template-react@1.0.0",
-        "initial-app@1.0.0",
-        "github-export-icp-cli@1.0.0"
-      ],
-      "testIds": [
-        "REQ-1"
-      ],
-      "confidence": "high"
-    },
-    {
-      "featureId": "feature-create-an-about-section-with-a-brief-description-explaining-that-evaron-provides-high-performance-durable-and-safe-battery-solutions-for-evs-and-solar-systems",
-      "featureTitle": "Create an About section with a brief description explaining that EVARON provides high-performance, durable and safe battery solutions for EVs and solar systems",
-      "files": [
-        "frontend/src/App.tsx",
         "frontend/src/components/AboutSection.tsx"
       ],
       "components": [
@@ -35,15 +15,14 @@
         "github-export-icp-cli@1.0.0"
       ],
       "testIds": [
-        "REQ-2"
+        "REQ-27"
       ],
       "confidence": "high"
     },
     {
-      "featureId": "feature-create-a-products-section-displaying-three-product-cards-ev-lithium-battery-solar-storage-battery-and-industrial-battery-pack-each-with-appropriate-visual-presentation",
-      "featureTitle": "Create a Products section displaying three product cards: 'EV Lithium Battery', 'Solar Storage Battery', and 'Industrial Battery Pack', each with appropriate visual presentation",
+      "featureId": "feature-remove-industrial-battery-pack-product-card-completely-from-the-products-section",
+      "featureTitle": "Remove Industrial Battery Pack product card completely from the Products section",
       "files": [
-        "frontend/src/App.tsx",
         "frontend/src/components/ProductsSection.tsx"
       ],
       "components": [
@@ -54,15 +33,50 @@
         "github-export-icp-cli@1.0.0"
       ],
       "testIds": [
-        "REQ-3"
+        "REQ-28"
       ],
       "confidence": "high"
     },
     {
-      "featureId": "feature-create-a-why-choose-us-section-highlighting-four-key-benefits-long-life-cycle-fast-charging-high-safety-standards-and-energy-efficient",
-      "featureTitle": "Create a 'Why Choose Us' section highlighting four key benefits: 'Long Life Cycle', 'Fast Charging', 'High Safety Standards', and 'Energy Efficient'",
+      "featureId": "feature-add-telecom-battery-product-card-to-the-products-section-with-professional-description-and-premium-styling",
+      "featureTitle": "Add Telecom Battery product card to the Products section with professional description and premium styling",
       "files": [
-        "frontend/src/App.tsx",
+        "frontend/src/components/ProductsSection.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-29"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-split-the-existing-lithium-inverter-product-into-two-separate-product-cards-lithium-inverter-2kw-2000w-and-lithium-inverter-3kw-3000w",
+      "featureTitle": "Split the existing Lithium Inverter product into two separate product cards: 'Lithium Inverter 2KW (2000W)' and 'Lithium Inverter 3KW (3000W)'",
+      "files": [
+        "frontend/src/components/ProductsSection.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-30"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-update-why-choose-evron-section-to-display-six-benefits-long-life-cycle-fast-charging-technology-high-safety-standards-energy-efficient-systems-reliable-power-backup-and-advanced-bms-technology",
+      "featureTitle": "Update Why Choose EVRON section to display six benefits: 'Long Life Cycle', 'Fast Charging Technology', 'High Safety Standards', 'Energy Efficient Systems', 'Reliable Power Backup', and 'Advanced BMS Technology'",
+      "files": [
         "frontend/src/components/WhyChooseUsSection.tsx"
       ],
       "components": [
@@ -73,16 +87,15 @@
         "github-export-icp-cli@1.0.0"
       ],
       "testIds": [
-        "REQ-4"
+        "REQ-31"
       ],
       "confidence": "high"
     },
     {
-      "featureId": "feature-create-a-contact-section-with-a-form-containing-name-email-and-message-fields-and-implement-form-submission-handling-in-the-backend-to-store-contact-inquiries",
-      "featureTitle": "Create a Contact section with a form containing Name, Email, and Message fields, and implement form submission handling in the backend to store contact inquiries",
+      "featureId": "feature-render-all-generated-product-images-and-brand-assets-logo-product-images-for-ev-battery-solar-battery-telecom-battery-inverter-2kw-inverter-3kw-as-static-files-in-frontend-public-assets-generated-directory",
+      "featureTitle": "Render all generated product images and brand assets (logo, product images for EV Battery, Solar Battery, Telecom Battery, Inverter 2KW, Inverter 3KW) as static files in frontend/public/assets/generated directory",
       "files": [
-        "frontend/src/App.tsx",
-        "frontend/src/components/ContactSection.tsx"
+        "frontend/src/components/ProductsSection.tsx"
       ],
       "components": [
         "core-infrastructure@1.0.2",
@@ -92,67 +105,7 @@
         "github-export-icp-cli@1.0.0"
       ],
       "testIds": [
-        "REQ-5"
-      ],
-      "confidence": "high"
-    },
-    {
-      "featureId": "feature-create-a-professional-footer-displaying-the-company-name-evaron",
-      "featureTitle": "Create a professional footer displaying the company name 'EVARON'",
-      "files": [
-        "frontend/src/App.tsx",
-        "frontend/src/components/Footer.tsx"
-      ],
-      "components": [
-        "core-infrastructure@1.0.2",
-        "shadcn-ui@1.0.0",
-        "build-template-react@1.0.0",
-        "initial-app@1.0.0",
-        "github-export-icp-cli@1.0.0"
-      ],
-      "testIds": [
-        "REQ-6"
-      ],
-      "confidence": "high"
-    },
-    {
-      "featureId": "feature-apply-a-modern-clean-corporate-design-with-a-black-orange-and-white-color-scheme-throughout-the-website-using-bold-headings-and-professional-layout",
-      "featureTitle": "Apply a modern, clean corporate design with a black, orange, and white color scheme throughout the website, using bold headings and professional layout",
-      "files": [
-        "frontend/src/index.css",
-        "frontend/tailwind.config.js"
-      ],
-      "components": [
-        "core-infrastructure@1.0.2",
-        "shadcn-ui@1.0.0",
-        "build-template-react@1.0.0",
-        "initial-app@1.0.0",
-        "github-export-icp-cli@1.0.0"
-      ],
-      "testIds": [
-        "REQ-7"
-      ],
-      "confidence": "high"
-    },
-    {
-      "featureId": "feature-ensure-the-entire-website-is-fully-responsive-and-displays-correctly-on-both-mobile-and-desktop-devices",
-      "featureTitle": "Ensure the entire website is fully responsive and displays correctly on both mobile and desktop devices",
-      "files": [
-        "frontend/src/App.tsx",
-        "frontend/src/components/ContactSection.tsx",
-        "frontend/src/components/HeroSection.tsx",
-        "frontend/src/components/ProductsSection.tsx",
-        "frontend/src/components/WhyChooseUsSection.tsx"
-      ],
-      "components": [
-        "core-infrastructure@1.0.2",
-        "shadcn-ui@1.0.0",
-        "build-template-react@1.0.0",
-        "initial-app@1.0.0",
-        "github-export-icp-cli@1.0.0"
-      ],
-      "testIds": [
-        "REQ-8"
+        "REQ-33"
       ],
       "confidence": "high"
     }

@@ -1,13 +1,15 @@
 {
-  "frontend/src/App.tsx": "Main application component that renders all sections of the EVARON website in order: Hero, About, Products, Why Choose Us, Contact, and Footer.",
-  "frontend/src/components/HeroSection.tsx": "Hero section component with full-screen background image, bold headline \"Powering the Future of Energy\", subheading, and Contact Us button that smoothly scrolls to the contact form.",
-  "frontend/src/components/AboutSection.tsx": "About section component describing EVARON's high-performance, durable, and safe battery solutions for EVs and solar systems with icon highlights and detailed description.",
-  "frontend/src/components/ProductsSection.tsx": "Products section component displaying three product cards (EV Lithium Battery, Solar Storage Battery, Industrial Battery Pack) with images, icons, and descriptions in a responsive grid.",
-  "frontend/src/components/WhyChooseUsSection.tsx": "Why Choose Us section component showcasing four key benefits (Long Life Cycle, Fast Charging, High Safety Standards, Energy Efficient) with icons and hover effects.",
-  "frontend/src/components/ContactSection.tsx": "Contact section component with contact information display and functional form (Name, Email, Message) that submits to the backend with validation and success/error feedback.",
-  "frontend/src/components/Footer.tsx": "Professional footer component displaying EVARON logo, quick links, social media icons, copyright notice, and caffeine.ai attribution with UTM tracking.",
+  "frontend/src/App.tsx": "Main application component that renders all sections of the EVRON website including the new AddressSection positioned between ContactSection and Footer.",
+  "frontend/src/components/HeroSection.tsx": "Hero section displaying EVRON logo with tagline \"Drive the Future, Live the Green\", headline, subheading, phone number with +91 country code, and Contact Now button.",
+  "frontend/src/components/AboutSection.tsx": "About section describing EVRON as an innovative energy company delivering reliable lithium battery and inverter solutions for homes, telecom infrastructure, EVs, and solar systems.",
+  "frontend/src/components/ProductsSection.tsx": "Products section displaying five product cards (EV Battery, Solar Battery, Telecom Battery, Lithium Inverter 2KW, and Lithium Inverter 3KW) with updated product images and descriptions, Industrial Battery removed.",
+  "frontend/src/components/WhyChooseUsSection.tsx": "Why Choose Us section displaying six benefits including Long Life Cycle, Fast Charging Technology, High Safety Standards, Energy Efficient Systems, Reliable Power Backup, and Advanced BMS Technology with icons and descriptions.",
+  "frontend/src/components/ContactSection.tsx": "Contact section with contact form and information cards displaying phone number with +91 country code and email address infoevronindia@gmail.com.",
+  "frontend/src/components/Footer.tsx": "Footer displaying EVRON logo, tagline \"Drive the Future, Live the Green\", contact information with +91 phone number and email address, quick links, social media icons, and caffeine.ai attribution.",
   "frontend/src/hooks/useQueries.ts": "Custom React Query hook for submitting contact form data to the backend with proper error handling and cache invalidation.",
-  "frontend/src/index.css": "Global styles with OKLCH color system defining EVARON brand colors (black, orange, white), typography with bold headings, and utility classes for the corporate design.",
-  "frontend/tailwind.config.js": "Tailwind configuration with custom EVARON brand colors (brand-orange, brand-orange-dark, brand-black), zero border radius for sharp corporate look, and extended font weights.",
-  "frontend/src/main.tsx": "Application entry point with QueryClient, InternetIdentityProvider, and Sonner toast notifications configured."
+  "frontend/src/index.css": "Global styles with OKLCH color system updated to use green (#2ecc71) as the primary brand color instead of orange, with utility classes for brand-green variants.",
+  "frontend/tailwind.config.js": "Tailwind configuration updated with brand-green color tokens replacing brand-orange throughout the theme.",
+  "frontend/src/main.tsx": "Application entry point with QueryClient, InternetIdentityProvider, and Sonner toast notifications configured.",
+  "frontend/index.html": "HTML entry point with updated title and meta description for EVRON brand.",
+  "frontend/src/components/AddressSection.tsx": "New section displaying Head Office and Branch Office addresses in professional card format with MapPin icons and EVRON green color scheme."
 }

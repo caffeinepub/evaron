@@ -59,9 +59,9 @@ export default function ContactSection() {
       <div className="container px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-6xl font-black text-white mb-6">
-            Get in <span className="text-brand-orange">Touch</span>
+            Get in <span className="text-brand-green">Touch</span>
           </h2>
-          <div className="w-24 h-1 bg-brand-orange mx-auto mb-8" />
+          <div className="w-24 h-1 bg-brand-green mx-auto mb-8" />
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
             Ready to power your future? Contact us today to discuss your battery needs
           </p>
@@ -74,30 +74,40 @@ export default function ContactSection() {
               <h3 className="text-3xl font-black text-white mb-8">Contact Information</h3>
               <div className="space-y-6">
                 <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-brand-orange flex items-center justify-center flex-shrink-0">
-                    <Mail className="w-6 h-6 text-white" />
-                  </div>
-                  <div>
-                    <h4 className="text-lg font-bold text-white mb-1">Email</h4>
-                    <p className="text-gray-300">info@evaron.com</p>
-                  </div>
-                </div>
-                <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-brand-orange flex items-center justify-center flex-shrink-0">
+                  <div className="w-12 h-12 bg-brand-green flex items-center justify-center flex-shrink-0">
                     <Phone className="w-6 h-6 text-white" />
                   </div>
                   <div>
                     <h4 className="text-lg font-bold text-white mb-1">Phone</h4>
-                    <p className="text-gray-300">+1 (555) 123-4567</p>
+                    <a 
+                      href="tel:+919296174465" 
+                      className="text-2xl font-black text-brand-green hover:text-brand-green-dark transition-colors"
+                    >
+                      +91 9296174465
+                    </a>
                   </div>
                 </div>
                 <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-brand-orange flex items-center justify-center flex-shrink-0">
+                  <div className="w-12 h-12 bg-brand-green flex items-center justify-center flex-shrink-0">
+                    <Mail className="w-6 h-6 text-white" />
+                  </div>
+                  <div>
+                    <h4 className="text-lg font-bold text-white mb-1">Email</h4>
+                    <a 
+                      href="mailto:infoevronindia@gmail.com" 
+                      className="text-lg text-brand-green hover:text-brand-green-dark transition-colors"
+                    >
+                      infoevronindia@gmail.com
+                    </a>
+                  </div>
+                </div>
+                <div className="flex items-start space-x-4">
+                  <div className="w-12 h-12 bg-brand-green flex items-center justify-center flex-shrink-0">
                     <MapPin className="w-6 h-6 text-white" />
                   </div>
                   <div>
                     <h4 className="text-lg font-bold text-white mb-1">Location</h4>
-                    <p className="text-gray-300">Global Battery Solutions</p>
+                    <p className="text-gray-300">Jharkhand, India</p>
                   </div>
                 </div>
               </div>
@@ -118,7 +128,7 @@ export default function ContactSection() {
                   value={formData.name}
                   onChange={handleChange}
                   placeholder="Your name"
-                  className="rounded-none border-2 border-gray-300 focus:border-brand-orange h-12"
+                  className="rounded-none border-2 border-gray-300 focus:border-brand-green h-12"
                   required
                 />
               </div>
@@ -133,7 +143,7 @@ export default function ContactSection() {
                   value={formData.email}
                   onChange={handleChange}
                   placeholder="your.email@example.com"
-                  className="rounded-none border-2 border-gray-300 focus:border-brand-orange h-12"
+                  className="rounded-none border-2 border-gray-300 focus:border-brand-green h-12"
                   required
                 />
               </div>
@@ -147,14 +157,14 @@ export default function ContactSection() {
                   value={formData.message}
                   onChange={handleChange}
                   placeholder="Tell us about your battery needs..."
-                  className="rounded-none border-2 border-gray-300 focus:border-brand-orange min-h-[150px] resize-none"
+                  className="rounded-none border-2 border-gray-300 focus:border-brand-green min-h-[150px] resize-none"
                   required
                 />
               </div>
               <Button
                 type="submit"
                 disabled={submitMutation.isPending}
-                className="w-full bg-brand-orange hover:bg-brand-orange-dark text-white font-bold text-lg py-6 h-auto rounded-none"
+                className="w-full bg-brand-green hover:bg-brand-green-dark text-white font-bold text-lg py-6 h-auto rounded-none"
               >
                 {submitMutation.isPending ? (
                   <>

@@ -23,16 +23,16 @@
         --destructive-foreground: 0.985 0 0;
         --border: 0.922 0 0;
         --input: 0.922 0 0;
-        --ring: 0.65 0.25 35;
+        --ring: 0.68 0.18 145;
         --chart-1: 0.646 0.222 41.116;
         --chart-2: 0.6 0.118 184.704;
         --chart-3: 0.398 0.07 227.392;
         --chart-4: 0.828 0.189 84.429;
         --chart-5: 0.769 0.188 70.08;
         
-        /* EVARON Brand Colors */
-        --brand-orange: 0.65 0.25 35;
-        --brand-orange-dark: 0.55 0.25 35;
+        /* EVRON Brand Colors - Green Theme */
+        --brand-green: 0.68 0.18 145;
+        --brand-green-dark: 0.58 0.18 145;
         --brand-black: 0.145 0 0;
     }
 
@@ -55,16 +55,16 @@
         --destructive-foreground: 0.205 0 0;
         --border: 1 0 0 / 10%;
         --input: 1 0 0 / 15%;
-        --ring: 0.65 0.25 35;
+        --ring: 0.68 0.18 145;
         --chart-1: 0.488 0.243 264.376;
         --chart-2: 0.696 0.17 162.48;
         --chart-3: 0.769 0.188 70.08;
         --chart-4: 0.627 0.265 303.9;
         --chart-5: 0.645 0.246 16.439;
         
-        /* EVARON Brand Colors */
-        --brand-orange: 0.65 0.25 35;
-        --brand-orange-dark: 0.55 0.25 35;
+        /* EVRON Brand Colors - Green Theme */
+        --brand-green: 0.68 0.18 145;
+        --brand-green-dark: 0.58 0.18 145;
         --brand-black: 0.145 0 0;
     }
 
@@ -85,39 +85,39 @@
 }
 
 @layer utilities {
-    .text-brand-orange {
-        color: oklch(var(--brand-orange));
+    .text-brand-green {
+        color: oklch(var(--brand-green));
     }
     
-    .bg-brand-orange {
-        background-color: oklch(var(--brand-orange));
+    .bg-brand-green {
+        background-color: oklch(var(--brand-green));
     }
     
-    .bg-brand-orange-dark {
-        background-color: oklch(var(--brand-orange-dark));
+    .bg-brand-green-dark {
+        background-color: oklch(var(--brand-green-dark));
     }
     
-    .border-brand-orange {
-        border-color: oklch(var(--brand-orange));
+    .border-brand-green {
+        border-color: oklch(var(--brand-green));
     }
     
-    .hover\:bg-brand-orange:hover {
-        background-color: oklch(var(--brand-orange));
+    .hover\:bg-brand-green:hover {
+        background-color: oklch(var(--brand-green));
     }
     
-    .hover\:bg-brand-orange-dark:hover {
-        background-color: oklch(var(--brand-orange-dark));
+    .hover\:bg-brand-green-dark:hover {
+        background-color: oklch(var(--brand-green-dark));
     }
     
-    .hover\:text-brand-orange:hover {
-        color: oklch(var(--brand-orange));
+    .hover\:text-brand-green:hover {
+        color: oklch(var(--brand-green));
     }
     
-    .hover\:border-brand-orange:hover {
-        border-color: oklch(var(--brand-orange));
+    .hover\:border-brand-green:hover {
+        border-color: oklch(var(--brand-green));
     }
     
-    .focus\:border-brand-orange:focus {
-        border-color: oklch(var(--brand-orange));
+    .focus\:border-brand-green:focus {
+        border-color: oklch(var(--brand-green));
     }
 }

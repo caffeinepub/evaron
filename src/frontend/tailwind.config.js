@@ -56,8 +56,8 @@ export default {
                     4: 'oklch(var(--chart-4))',
                     5: 'oklch(var(--chart-5))'
                 },
-                'brand-orange': 'oklch(var(--brand-orange))',
-                'brand-orange-dark': 'oklch(var(--brand-orange-dark))',
+                'brand-green': 'oklch(var(--brand-green))',
+                'brand-green-dark': 'oklch(var(--brand-green-dark))',
                 'brand-black': 'oklch(var(--brand-black))'
             },
             borderRadius: {

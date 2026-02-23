@@ -1,16 +1,16 @@
 # Specification
 
 ## Summary
-**Goal:** Create a professional corporate website for EVARON Battery Company showcasing their battery solutions for EVs, solar systems, and industrial applications.
+**Goal:** Rebuild EVRON website with new logo design, remove Industrial Battery product, add Telecom Battery product, and split Inverter into 2KW and 3KW variants.
 
 **Planned changes:**
-- Build a hero section with headline, subheading, and Contact Us CTA button that scrolls to contact form
-- Add About section describing EVARON's high-performance, durable, and safe battery solutions
-- Create Products section with three product cards: EV Lithium Battery, Solar Storage Battery, and Industrial Battery Pack
-- Implement Why Choose Us section highlighting four benefits: Long Life Cycle, Fast Charging, High Safety Standards, and Energy Efficient
-- Build Contact section with form (Name, Email, Message) and backend handling to store inquiries
-- Add professional footer with EVARON company name
-- Apply modern, clean corporate design with black, orange, and white color scheme
-- Ensure full responsive design for mobile and desktop
+- Design and implement new EVRON logo featuring two symmetrical green leaves forming a V shape
+- Display tagline "Drive the Future, Live the Green" below logo in hero section
+- Update About section to describe EVRON as innovative energy company for homes, telecom, EVs and solar
+- Remove Industrial Battery Pack product completely
+- Add Telecom Battery product card
+- Split Lithium Inverter into two separate products: 2KW (2000W) and 3KW (3000W)
+- Update Why Choose EVRON section with six benefits including Advanced BMS Technology
+- Apply premium modern corporate design with green (#2ecc71) highlights and energy-themed background
 
-**User-visible outcome:** Users can browse EVARON's battery product offerings, learn about the company's advantages, and submit contact inquiries through a responsive, professionally-designed website.
+**User-visible outcome:** Users will see a refreshed EVRON website with a new professional logo, updated product lineup (Telecom Battery added, Industrial Battery removed, Inverters split into 2KW and 3KW models), and premium modern corporate design throughout.

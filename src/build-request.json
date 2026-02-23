@@ -1,176 +1,196 @@
 {
   "kind": "build_request",
-  "title": "Create EVARON Battery Company Website",
-  "projectName": "EVARON Battery",
+  "title": "Rebuild EVRON website with new logo, remove Industrial Battery, add Telecom Battery and split Inverter products",
+  "projectName": "EVRON Energy",
   "priority": "normal",
   "requirements": [
     {
-      "id": "REQ-1",
-      "text": "Create a hero section with headline 'Powering the Future of Energy', subheading 'Advanced Lithium & EV Battery Solutions', and a 'Contact Us' call-to-action button that scrolls to the contact form",
+      "id": "REQ-25",
+      "text": "Design and generate a new EVRON logo featuring two symmetrical green leaves (#2ecc71) that form a subtle 'V' shape representing growth and energy, using a bold modern sans-serif font, with a minimal eco-friendly corporate aesthetic",
       "target": "frontend",
       "source": {
         "messageIds": [
-          "msg-2"
+          "msg-latest"
         ],
         "quotes": [
-          "Hero Section: Headline: Powering the Future of Energy, Subheading: Advanced Lithium & EV Battery Solutions, Call-to-action button: Contact Us"
+          "Design a clean and powerful logo for EVRON using two symmetrical green leaves. The two leaves should form a subtle \"V\" shape representing growth and energy. Use a bold modern sans-serif font. Primary green color: #2ecc71"
         ]
       },
       "acceptanceCriteria": [
-        "Hero section displays the exact headline and subheading text",
-        "Contact Us button is prominently displayed",
-        "Button smoothly scrolls to the contact section when clicked"
+        "Logo displays two symmetrical green leaves in #2ecc71 color",
+        "Leaves form a subtle V shape",
+        "Uses bold modern sans-serif font for EVRON text",
+        "Design appears minimal, eco-friendly and corporate"
       ]
     },
     {
-      "id": "REQ-2",
-      "text": "Create an About section with a brief description explaining that EVARON provides high-performance, durable and safe battery solutions for EVs and solar systems",
+      "id": "REQ-26",
+      "text": "Display the tagline 'Drive the Future, Live the Green' clearly visible below the EVRON logo in the hero section",
       "target": "frontend",
       "source": {
         "messageIds": [
-          "msg-2"
+          "msg-latest"
         ],
         "quotes": [
-          "About Section: Brief description about Evaron providing high-performance, durable and safe battery solutions for EVs and solar systems"
+          "Tagline clearly visible: Drive the Future, Live the Green"
         ]
       },
       "acceptanceCriteria": [
-        "About section includes descriptive text about EVARON's battery solutions",
-        "Text emphasizes high-performance, durability, and safety",
-        "Section mentions both EV and solar system applications"
+        "Tagline 'Drive the Future, Live the Green' appears below logo in hero section",
+        "Tagline is clearly readable and prominently displayed"
       ]
     },
     {
-      "id": "REQ-3",
-      "text": "Create a Products section displaying three product cards: 'EV Lithium Battery', 'Solar Storage Battery', and 'Industrial Battery Pack', each with appropriate visual presentation",
+      "id": "REQ-27",
+      "text": "Update About section content to describe EVRON as an innovative energy company delivering reliable lithium battery and inverter solutions for homes, telecom infrastructure, EVs and solar systems with strong professional tone",
       "target": "frontend",
       "source": {
         "messageIds": [
-          "msg-2"
+          "msg-latest"
         ],
         "quotes": [
-          "Products Section: Show 3 product cards: - EV Lithium Battery - Solar Storage Battery - Industrial Battery Pack"
+          "Write a strong professional paragraph describing EVRON as an innovative energy company delivering reliable lithium battery and inverter solutions for homes, telecom infrastructure, EVs and solar systems."
         ]
       },
       "acceptanceCriteria": [
-        "Three distinct product cards are displayed",
-        "Each card shows the correct product name",
-        "Cards are visually consistent and well-organized",
-        "Layout is responsive across screen sizes"
+        "About section contains professional paragraph mentioning homes, telecom infrastructure, EVs and solar systems",
+        "Text conveys EVRON as innovative energy company",
+        "Content focuses on lithium battery and inverter solutions"
       ]
     },
     {
-      "id": "REQ-4",
-      "text": "Create a 'Why Choose Us' section highlighting four key benefits: 'Long Life Cycle', 'Fast Charging', 'High Safety Standards', and 'Energy Efficient'",
+      "id": "REQ-28",
+      "text": "Remove Industrial Battery Pack product card completely from the Products section",
       "target": "frontend",
       "source": {
         "messageIds": [
-          "msg-2"
+          "msg-latest"
         ],
         "quotes": [
-          "Why Choose Us Section: - Long Life Cycle - Fast Charging - High Safety Standards - Energy Efficient"
+          "Remove Industrial Battery completely."
         ]
       },
       "acceptanceCriteria": [
-        "All four benefits are displayed clearly",
-        "Each benefit is presented with consistent styling",
-        "Section is visually distinct from other sections"
+        "Industrial Battery Pack product card is no longer displayed",
+        "Products section does not reference industrial batteries"
       ]
     },
     {
-      "id": "REQ-5",
-      "text": "Create a Contact section with a form containing Name, Email, and Message fields, and implement form submission handling in the backend to store contact inquiries",
-      "target": "both",
-      "source": {
-        "messageIds": [
-          "msg-2"
-        ],
-        "quotes": [
-          "Contact Section: Include contact form (Name, Email, Message)"
-        ]
-      },
-      "acceptanceCriteria": [
-        "Contact form displays Name, Email, and Message input fields",
-        "Form validates required fields before submission",
-        "Form data is successfully submitted to the backend",
-        "Backend stores contact inquiries with timestamp",
-        "User receives visual feedback on successful submission"
-      ]
-    },
-    {
-      "id": "REQ-6",
-      "text": "Create a professional footer displaying the company name 'EVARON'",
+      "id": "REQ-29",
+      "text": "Add Telecom Battery product card to the Products section with professional description and premium styling",
       "target": "frontend",
       "source": {
         "messageIds": [
-          "msg-2"
+          "msg-latest"
         ],
         "quotes": [
-          "Professional footer with company name"
+          "Telecom Batteries",
+          "- Telecom Battery"
         ]
       },
       "acceptanceCriteria": [
-        "Footer is present at the bottom of the page",
-        "Footer displays 'EVARON' company name",
-        "Footer styling is consistent with overall design"
+        "Telecom Battery appears as a product card in Products section",
+        "Card displays product name, description and follows existing card styling",
+        "Card includes product image with EVRON branding"
       ]
     },
     {
-      "id": "REQ-7",
-      "text": "Apply a modern, clean corporate design with a black, orange, and white color scheme throughout the website, using bold headings and professional layout",
+      "id": "REQ-30",
+      "text": "Split the existing Lithium Inverter product into two separate product cards: 'Lithium Inverter 2KW (2000W)' and 'Lithium Inverter 3KW (3000W)'",
       "target": "frontend",
       "source": {
         "messageIds": [
-          "msg-2"
+          "msg-latest"
         ],
         "quotes": [
-          "Design Style: Modern, clean, corporate look. Color theme: Black, orange and white. Use bold headings and professional layout"
+          "- Lithium Inverter 2KW (2000W)\n- Lithium Inverter 3KW (3000W)"
         ]
       },
       "acceptanceCriteria": [
-        "Primary color palette uses black, orange, and white",
-        "Headings use bold font weights",
-        "Overall design appears modern and professional",
-        "Layout follows corporate design principles with clear hierarchy"
+        "Lithium Inverter 2KW (2000W) displays as separate product card",
+        "Lithium Inverter 3KW (3000W) displays as separate product card",
+        "Both cards include power ratings in title",
+        "Each card has distinct product image with EVRON branding"
       ]
     },
     {
-      "id": "REQ-8",
-      "text": "Ensure the entire website is fully responsive and displays correctly on both mobile and desktop devices",
+      "id": "REQ-31",
+      "text": "Update Why Choose EVRON section to display six benefits: 'Long Life Cycle', 'Fast Charging Technology', 'High Safety Standards', 'Energy Efficient Systems', 'Reliable Power Backup', and 'Advanced BMS Technology'",
       "target": "frontend",
       "source": {
         "messageIds": [
-          "msg-2"
+          "msg-latest"
         ],
         "quotes": [
-          "Make it responsive for mobile and desktop"
+          "- Long Life Cycle\n- Fast Charging Technology\n- High Safety Standards\n- Energy Efficient Systems\n- Reliable Power Backup\n- Advanced BMS Technology"
         ]
       },
       "acceptanceCriteria": [
-        "Website adapts to mobile screen sizes without horizontal scroll",
-        "All sections are readable and functional on mobile devices",
-        "Desktop layout makes effective use of larger screen space",
-        "Navigation and interactions work smoothly on both mobile and desktop"
+        "All six benefits are displayed in Why Choose EVRON section",
+        "Advanced BMS Technology is included as the sixth benefit",
+        "Each benefit displays with appropriate icon and description"
+      ]
+    },
+    {
+      "id": "REQ-32",
+      "text": "Apply premium modern corporate design with clean spacing, energy-themed background, strong green (#2ecc71) highlights, and professional layout throughout the website",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-latest"
+        ],
+        "quotes": [
+          "Modern corporate layout. Premium clean spacing. Energy-themed background. Strong green highlights."
+        ]
+      },
+      "acceptanceCriteria": [
+        "Website displays modern corporate aesthetic",
+        "Spacing between sections is clean and premium",
+        "Background uses energy theme",
+        "Green color #2ecc71 is prominently used for highlights and accents",
+        "Layout appears professional and polished"
+      ]
+    },
+    {
+      "id": "REQ-33",
+      "text": "Render all generated product images and brand assets (logo, product images for EV Battery, Solar Battery, Telecom Battery, Inverter 2KW, Inverter 3KW) as static files in frontend/public/assets/generated directory",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-latest"
+        ]
+      },
+      "acceptanceCriteria": [
+        "All generated images are saved in frontend/public/assets/generated",
+        "Images are referenced as static assets in frontend components",
+        "Images do not route through backend"
       ]
     }
   ],
-  "constraints": [],
+  "constraints": [
+    "Do not change the backend contact form schema",
+    "Do not edit frontend/src/hooks/useInternetIdentity.ts",
+    "Do not edit frontend/src/hooks/useActor.ts",
+    "Do not edit frontend/src/main.tsx",
+    "Do not edit files in frontend/src/components/ui"
+  ],
   "nonGoals": [
-    "E-commerce functionality or online ordering",
-    "User authentication or login system",
-    "Blog or news section",
-    "Multi-language support",
-    "Live chat integration",
-    "Product comparison tools",
-    "Pricing information or quote calculator"
+    "Adding new backend functionality beyond contact form",
+    "Implementing user authentication",
+    "Creating admin panel",
+    "Adding e-commerce features",
+    "Integrating payment systems",
+    "Adding real-time features or chat"
   ],
   "imageRequirements": {
     "required": [
-      "EVARON company logo with battery or energy motif in black and orange (logo.dim_200x80.png)",
-      "Hero section background showing modern battery technology or clean energy (hero-bg.dim_1920x800.png)",
-      "EV Lithium Battery product image showing sleek automotive battery pack (ev-battery.dim_400x300.png)",
-      "Solar Storage Battery product image showing residential solar battery system (solar-battery.dim_400x300.png)",
-      "Industrial Battery Pack product image showing large-scale industrial battery unit (industrial-battery.dim_400x300.png)"
+      "EVRON logo with two symmetrical green leaves forming subtle V shape, bold modern sans-serif font, green color #2ecc71, minimal eco-friendly corporate design (evron-logo.dim_400x200.png)",
+      "EV Lithium Battery product with EVRON branding: two-leaf green logo above EVRON text in bright green, tagline 'Drive the Future, Live the Green' below, matte black or white body, realistic professional printing (ev-battery.dim_800x600.png)",
+      "Solar Storage Battery product with EVRON branding: two-leaf green logo above EVRON text in bright green, tagline 'Drive the Future, Live the Green' below, matte black or white body, realistic professional printing (solar-battery.dim_800x600.png)",
+      "Telecom Battery product with EVRON branding: two-leaf green logo above EVRON text in bright green, tagline 'Drive the Future, Live the Green' below, matte black or white body, realistic professional printing (telecom-battery.dim_800x600.png)",
+      "Lithium Inverter 2KW (2000W) product with EVRON branding: two-leaf green logo above EVRON text in bright green, tagline 'Drive the Future, Live the Green' below, matte black or white body, realistic professional printing (inverter-2kw.dim_800x600.png)",
+      "Lithium Inverter 3KW (3000W) product with EVRON branding: two-leaf green logo above EVRON text in bright green, tagline 'Drive the Future, Live the Green' below, matte black or white body, realistic professional printing (inverter-3kw.dim_800x600.png)",
+      "Energy-themed hero background with modern corporate aesthetic, green accents, suitable for EVRON brand (hero-background.dim_1920x1080.png)"
     ],
     "edits": []
   }

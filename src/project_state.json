@@ -1,0 +1,85 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 3,
+  "summary": "Modern, professional business website for EVARON battery company featuring hero section, about section, products showcase (EV/Solar/Industrial batteries), why choose us benefits, and contact form. Design: black, orange, white color scheme with responsive layout.",
+  "architectural_notes": [
+    "Single-page website with 5 main sections: Hero, About, Products, Why Choose Us, Contact",
+    "Responsive design for mobile and desktop viewports",
+    "Corporate color scheme: black, orange, white",
+    "Contact form with Name, Email, Message fields"
+  ],
+  "known_issues": [],
+  "isFixRequest": false,
+  "imageRequirements": "## Required Images\n- EVARON company logo with battery or energy motif in black and orange (logo.dim_200x80.png)\n- Hero section background showing modern battery technology or clean energy (hero-bg.dim_1920x800.png)\n- EV Lithium Battery product image showing sleek automotive battery pack (ev-battery.dim_400x300.png)\n- Solar Storage Battery product image showing residential solar battery system (solar-battery.dim_400x300.png)\n- Industrial Battery Pack product image showing large-scale industrial battery unit (industrial-battery.dim_400x300.png)",
+  "existing_features": [
+    {
+      "id": "feature-create-a-hero-section-with-headline-powering-the-future-of-energy-subheading-advanced-lithium-ev-battery-solutions-and-a-contact-us-call-to-action-button-that-scrolls-to-the-contact-form",
+      "title": "Create a hero section with headline 'Powering the Future of Energy', subheading 'Advanced Lithium & EV Battery Solutions', and a 'Contact Us' call-to-action button that scrolls to the contact form",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-an-about-section-with-a-brief-description-explaining-that-evaron-provides-high-performance-durable-and-safe-battery-solutions-for-evs-and-solar-systems",
+      "title": "Create an About section with a brief description explaining that EVARON provides high-performance, durable and safe battery solutions for EVs and solar systems",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-products-section-displaying-three-product-cards-ev-lithium-battery-solar-storage-battery-and-industrial-battery-pack-each-with-appropriate-visual-presentation",
+      "title": "Create a Products section displaying three product cards: 'EV Lithium Battery', 'Solar Storage Battery', and 'Industrial Battery Pack', each with appropriate visual presentation",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-why-choose-us-section-highlighting-four-key-benefits-long-life-cycle-fast-charging-high-safety-standards-and-energy-efficient",
+      "title": "Create a 'Why Choose Us' section highlighting four key benefits: 'Long Life Cycle', 'Fast Charging', 'High Safety Standards', and 'Energy Efficient'",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-contact-section-with-a-form-containing-name-email-and-message-fields-and-implement-form-submission-handling-in-the-backend-to-store-contact-inquiries",
+      "title": "Create a Contact section with a form containing Name, Email, and Message fields, and implement form submission handling in the backend to store contact inquiries",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-professional-footer-displaying-the-company-name-evaron",
+      "title": "Create a professional footer displaying the company name 'EVARON'",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-apply-a-modern-clean-corporate-design-with-a-black-orange-and-white-color-scheme-throughout-the-website-using-bold-headings-and-professional-layout",
+      "title": "Apply a modern, clean corporate design with a black, orange, and white color scheme throughout the website, using bold headings and professional layout",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-ensure-the-entire-website-is-fully-responsive-and-displays-correctly-on-both-mobile-and-desktop-devices",
+      "title": "Ensure the entire website is fully responsive and displays correctly on both mobile and desktop devices",
+      "reqIds": [
+        "REQ-8"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [],
+  "gameProjectType": "none",
+  "projectName": "EVARON",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

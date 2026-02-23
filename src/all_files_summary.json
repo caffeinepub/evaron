@@ -1,0 +1,21 @@
+{
+  "backend/main.mo": "Motoko actor that defines an Inquiry type and provides a submitContactForm function to store contact form submissions with validation for required fields.",
+  "feature_evidence.json": "Feature evidence report documenting five implemented features (hero, about, products, why-choose-us, contact sections) with associated files, components, test IDs, and high confidence ratings.",
+  "frontend-file-summaries.txt": "JSON-formatted summaries of all frontend files describing the EVARON website components, hooks, styling, and configuration.",
+  "frontend/index.css": "Tailwind CSS configuration with OKLCH color system defining light and dark theme variables for the EVARON brand including backgrounds, foregrounds, borders, and chart colors.",
+  "frontend/index.html": "HTML entry point that sets up the root div and loads the main React application from main.tsx.",
+  "frontend/src/App.tsx": "Main React component that renders the complete EVARON website by composing Hero, About, Products, WhyChooseUs, Contact, and Footer sections.",
+  "frontend/src/components/AboutSection.tsx": "About section component displaying EVARON's value propositions with three icon cards (Battery, Shield, Zap) and detailed description of battery solutions.",
+  "frontend/src/components/ContactSection.tsx": "Contact form component with name/email/message inputs, backend submission via React Query mutation, validation, toast notifications, and contact information display.",
+  "frontend/src/components/Footer.tsx": "Footer component with EVARON logo, quick links, social media icons (Facebook, X, LinkedIn, Instagram), copyright notice, and caffeine.ai attribution with UTM tracking.",
+  "frontend/src/components/HeroSection.tsx": "Full-screen hero section with background image overlay, bold headline 'Powering the Future of Energy', subheading, and Contact Us button that smoothly scrolls to the contact form.",
+  "frontend/src/components/ProductsSection.tsx": "React component displaying three product cards (EV Lithium Battery, Solar Storage Battery, Industrial Battery Pack) with images, icons, titles, and descriptions in a responsive grid layout with hover effects.",
+  "frontend/src/components/WhyChooseUsSection.tsx": "React component showcasing four key benefits (Long Life Cycle, Fast Charging, High Safety Standards, Energy Efficient) with icons and descriptions in a responsive grid with hover animations.",
+  "frontend/src/hooks/useActor.ts": "Custom React hook that creates and manages the backend actor instance based on Internet Identity authentication state, invalidating dependent queries when the actor changes.",
+  "frontend/src/hooks/useInternetIdentity.ts": "Custom React hook and provider for Internet Identity authentication, managing login state, identity persistence, and AuthClient lifecycle with configurable options.",
+  "frontend/src/hooks/useQueries.ts": "Custom React hook providing a mutation for submitting contact form data to the backend actor with automatic query invalidation on success.",
+  "frontend/src/index.css": "Tailwind CSS configuration with custom EVARON brand colors (orange, black), design tokens for light/dark themes, and utility classes for brand-specific styling.",
+  "frontend/src/main.tsx": "Application entry point that sets up React Query client, Internet Identity provider, and renders the root App component.",
+  "frontend/tailwind.config.js": "Tailwind CSS configuration defining custom colors (including brand-orange), typography, animations, and theme extensions with OKLCH color space support.",
+  "project_state.json": "Project metadata tracking implemented features, architectural notes, and image requirements for the EVARON battery company single-page website with five main sections."
+}

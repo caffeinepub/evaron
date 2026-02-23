@@ -1,0 +1,177 @@
+{
+  "kind": "build_request",
+  "title": "Create EVARON Battery Company Website",
+  "projectName": "EVARON Battery",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "text": "Create a hero section with headline 'Powering the Future of Energy', subheading 'Advanced Lithium & EV Battery Solutions', and a 'Contact Us' call-to-action button that scrolls to the contact form",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Hero Section: Headline: Powering the Future of Energy, Subheading: Advanced Lithium & EV Battery Solutions, Call-to-action button: Contact Us"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Hero section displays the exact headline and subheading text",
+        "Contact Us button is prominently displayed",
+        "Button smoothly scrolls to the contact section when clicked"
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "text": "Create an About section with a brief description explaining that EVARON provides high-performance, durable and safe battery solutions for EVs and solar systems",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "About Section: Brief description about Evaron providing high-performance, durable and safe battery solutions for EVs and solar systems"
+        ]
+      },
+      "acceptanceCriteria": [
+        "About section includes descriptive text about EVARON's battery solutions",
+        "Text emphasizes high-performance, durability, and safety",
+        "Section mentions both EV and solar system applications"
+      ]
+    },
+    {
+      "id": "REQ-3",
+      "text": "Create a Products section displaying three product cards: 'EV Lithium Battery', 'Solar Storage Battery', and 'Industrial Battery Pack', each with appropriate visual presentation",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Products Section: Show 3 product cards: - EV Lithium Battery - Solar Storage Battery - Industrial Battery Pack"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Three distinct product cards are displayed",
+        "Each card shows the correct product name",
+        "Cards are visually consistent and well-organized",
+        "Layout is responsive across screen sizes"
+      ]
+    },
+    {
+      "id": "REQ-4",
+      "text": "Create a 'Why Choose Us' section highlighting four key benefits: 'Long Life Cycle', 'Fast Charging', 'High Safety Standards', and 'Energy Efficient'",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Why Choose Us Section: - Long Life Cycle - Fast Charging - High Safety Standards - Energy Efficient"
+        ]
+      },
+      "acceptanceCriteria": [
+        "All four benefits are displayed clearly",
+        "Each benefit is presented with consistent styling",
+        "Section is visually distinct from other sections"
+      ]
+    },
+    {
+      "id": "REQ-5",
+      "text": "Create a Contact section with a form containing Name, Email, and Message fields, and implement form submission handling in the backend to store contact inquiries",
+      "target": "both",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Contact Section: Include contact form (Name, Email, Message)"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Contact form displays Name, Email, and Message input fields",
+        "Form validates required fields before submission",
+        "Form data is successfully submitted to the backend",
+        "Backend stores contact inquiries with timestamp",
+        "User receives visual feedback on successful submission"
+      ]
+    },
+    {
+      "id": "REQ-6",
+      "text": "Create a professional footer displaying the company name 'EVARON'",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Professional footer with company name"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Footer is present at the bottom of the page",
+        "Footer displays 'EVARON' company name",
+        "Footer styling is consistent with overall design"
+      ]
+    },
+    {
+      "id": "REQ-7",
+      "text": "Apply a modern, clean corporate design with a black, orange, and white color scheme throughout the website, using bold headings and professional layout",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Design Style: Modern, clean, corporate look. Color theme: Black, orange and white. Use bold headings and professional layout"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Primary color palette uses black, orange, and white",
+        "Headings use bold font weights",
+        "Overall design appears modern and professional",
+        "Layout follows corporate design principles with clear hierarchy"
+      ]
+    },
+    {
+      "id": "REQ-8",
+      "text": "Ensure the entire website is fully responsive and displays correctly on both mobile and desktop devices",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "Make it responsive for mobile and desktop"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Website adapts to mobile screen sizes without horizontal scroll",
+        "All sections are readable and functional on mobile devices",
+        "Desktop layout makes effective use of larger screen space",
+        "Navigation and interactions work smoothly on both mobile and desktop"
+      ]
+    }
+  ],
+  "constraints": [],
+  "nonGoals": [
+    "E-commerce functionality or online ordering",
+    "User authentication or login system",
+    "Blog or news section",
+    "Multi-language support",
+    "Live chat integration",
+    "Product comparison tools",
+    "Pricing information or quote calculator"
+  ],
+  "imageRequirements": {
+    "required": [
+      "EVARON company logo with battery or energy motif in black and orange (logo.dim_200x80.png)",
+      "Hero section background showing modern battery technology or clean energy (hero-bg.dim_1920x800.png)",
+      "EV Lithium Battery product image showing sleek automotive battery pack (ev-battery.dim_400x300.png)",
+      "Solar Storage Battery product image showing residential solar battery system (solar-battery.dim_400x300.png)",
+      "Industrial Battery Pack product image showing large-scale industrial battery unit (industrial-battery.dim_400x300.png)"
+    ],
+    "edits": []
+  }
+}
